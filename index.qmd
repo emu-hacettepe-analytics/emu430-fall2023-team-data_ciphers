@@ -1,13 +1,11 @@
 ---
-title: "Team XXX"
+title: "Data Ciphers"
 sidebar: false 
 ---
 
-This is our project webpage.
+Welcome :) This is our project webpage.
 
 Please stay tuned to follow our project activities.
-
-This is our template.
 
 # Team Members
 
@@ -19,6 +17,16 @@ This is our template.
 
 4.  [Sebastian Szymański](https://tr.wikipedia.org/wiki/Sebastian_Szyma%C5%84ski)
 
+5.  [Mert Bekir Kaplan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-mer7kaplan/)
+
+6.  [Mauro Icardi](https://tr.wikipedia.org/wiki/Mauro_Icardi)
+
 # Project Topic
+
+## Turkey Health Survey
+
+The Turkey Health Survey aims to uncover people's overall health and gather 
+information about key health indicators that are important for understanding a country's development. This study is designed to facilitate international comparisons and provide insights into national health 
+needs.
 
 # Data Set

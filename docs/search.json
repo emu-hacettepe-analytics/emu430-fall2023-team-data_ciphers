@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Team XXX",
+    "title": "Data Ciphers",
     "section": "",
-    "text": "This is our project webpage.\nPlease stay tuned to follow our project activities.\nThis is our template.\n\nTeam Members\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\n\n\n\nProject Topic\n\n\nData Set\n\n\n\n\n Back to top"
+    "text": "Welcome :) This is our project webpage.\nPlease stay tuned to follow our project activities."
   },
   {
     "objectID": "about.html",
@@ -26,5 +26,12 @@
     "title": "Data",
     "section": "",
     "text": "Data source: xxx\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html#turkey-health-survey",
+    "href": "index.html#turkey-health-survey",
+    "title": "Data Ciphers",
+    "section": "Turkey Health Survey",
+    "text": "Turkey Health Survey\nThe Turkey Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs."
   }
 ]
