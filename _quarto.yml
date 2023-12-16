@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+  favicon: logo.png
   title: "Data Cipher's Project Lab"
   navbar:
     search: true
