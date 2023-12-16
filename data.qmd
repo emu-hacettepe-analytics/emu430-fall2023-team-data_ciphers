@@ -2,4 +2,4 @@
 title: "Data"
 ---
 
-Data source:
+Data source: [Turkey Health Survey, 2022](https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Saglik-Arastirmasi-2022-49747)
