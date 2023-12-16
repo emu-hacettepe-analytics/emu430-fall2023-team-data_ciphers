@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Data Cipher's Project Lab"
+  title: Data Cipher's Project Lab
   navbar:
     search: true
     left:
@@ -17,7 +17,10 @@ website:
             
     tools:
       - icon: github
-        href: https://twitter.com
+        href: https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers
+        menu:
+          - text: Mert Bekir Kaplan
+            url: https://emu-hacettepe-analytics.github.io/emu430-fall2023-mer7kaplan/
 
   page-navigation: true
   back-to-top-navigation: true
