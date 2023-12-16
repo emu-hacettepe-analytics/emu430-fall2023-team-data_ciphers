@@ -3,7 +3,7 @@ title: "Data Ciphers"
 sidebar: false 
 ---
 
-Welcome :) This is our project webpage.
+Welcome :) This is our project webpage
 
 Please stay tuned to follow our project activities.
 
@@ -15,7 +15,7 @@ Please stay tuned to follow our project activities.
 
 2.  [Ayşenur Eren](https://emu-hacettepe-analytics.github.io/emu430-fall2023-AysenurErenn/)
 
-3.  [Ceren Arslan](https://tr.wikipedia.org/wiki/Fred_(1993_do%C4%9Fumlu_futbolcu))
+3.  [Ceren Arslan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-ccerenarslan/)
 
 4.  [Doğa Oral](https://tr.wikipedia.org/wiki/Sebastian_Szyma%C5%84ski)
 
