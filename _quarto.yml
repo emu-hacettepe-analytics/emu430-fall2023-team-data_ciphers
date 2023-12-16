@@ -30,7 +30,7 @@ format:
     toc: true
     toc-location: left
     theme: 
-      light: minty 
+      light: lux 
       dark: lux
     css: styles.css
 
