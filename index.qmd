@@ -7,6 +7,8 @@ Welcome :) This is our project webpage.
 
 Please stay tuned to follow our project activities.
 
+![](ourlogo.png){width="507"}
+
 # Team Members
 
 1.  [Arda Türkan](https://tr.wikipedia.org/wiki/Edin_D%C5%BEeko)
@@ -24,6 +26,8 @@ Please stay tuned to follow our project activities.
 # Project Topic
 
 ## Turkey Health Survey
+
+![](medical.gif){fig-align="center" width="218"}
 
 ::: {style="text-align: justify"}
 The Turkey Health Survey aims to uncover people's overall health and gather information about key health indicators that are important for understanding a country's development. This study is designed to facilitate international comparisons and provide insights into national health needs.
