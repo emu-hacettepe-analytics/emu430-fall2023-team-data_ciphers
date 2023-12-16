@@ -7,11 +7,11 @@
     "text": "Welcome :) This is our project webpage.\nPlease stay tuned to follow our project activities."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
+    "objectID": "index.html#turkey-health-survey",
+    "href": "index.html#turkey-health-survey",
+    "title": "Data Ciphers",
+    "section": "Turkey Health Survey",
+    "text": "Turkey Health Survey\nThe Turkey Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs."
   },
   {
     "objectID": "analysis.html",
@@ -26,12 +26,5 @@
     "title": "Data",
     "section": "",
     "text": "Data source:\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "index.html#turkey-health-survey",
-    "href": "index.html#turkey-health-survey",
-    "title": "Data Ciphers",
-    "section": "Turkey Health Survey",
-    "text": "Turkey Health Survey\nThe Turkey Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs."
   }
 ]
