@@ -2,8 +2,4 @@
 title: "Analysis"
 ---
 
-About this site
-
-```{r}
-
-```
+![](giphy1.gif){width="407"}

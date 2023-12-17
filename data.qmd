@@ -13,6 +13,8 @@ format:
     number-sections: true
 ---
 
+![](giphy.gif){width="382"}
+
 ## General Information About the Data
 
 *This part is going to be updated soon...*
@@ -33,7 +35,7 @@ format:
 Before importing our data, we manually cleaned it by removing Turkish text and unnecessary information. Then, we used the '*dplyr*' and '*tidyr*' packages to improve our understanding of the data. The relevant code is provided below.
 :::
 
-This study includes three datasets:
+This study includes three data-sets:
 
 ### **Percentage of Health Problems in the Last 12 Months by Sex, 2016-2022** {toc-text="Dataset 1"}
 
