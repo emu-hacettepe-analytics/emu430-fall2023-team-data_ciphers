@@ -147,14 +147,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#general-information-about-the-data" id="toc-general-information-about-the-data" class="nav-link active" data-scroll-target="#general-information-about-the-data">General Information About the Data</a></li>
-  <li><a href="#why-we-selected-this-data" id="toc-why-we-selected-this-data" class="nav-link" data-scroll-target="#why-we-selected-this-data">Why We Selected This Data</a></li>
-  <li><a href="#our-objectives" id="toc-our-objectives" class="nav-link" data-scroll-target="#our-objectives">Our Objectives</a></li>
-  <li><a href="#importing-and-preprocessing-data-our-approach" id="toc-importing-and-preprocessing-data-our-approach" class="nav-link" data-scroll-target="#importing-and-preprocessing-data-our-approach">Importing and Preprocessing Data: Our Approach</a>
-  <ul class="collapse">
-  <li><a href="#body-mass-index-distribution-of-individuals-by-sex-2008-2022" id="toc-body-mass-index-distribution-of-individuals-by-sex-2008-2022" class="nav-link" data-scroll-target="#body-mass-index-distribution-of-individuals-by-sex-2008-2022">Body Mass Index Distribution of Individuals by Sex, 2008-2022</a></li>
-  </ul></li>
-  <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link" data-scroll-target="#exploratory-data-analysis">Exploratory Data Analysis</a></li>
+  <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link active" data-scroll-target="#exploratory-data-analysis">Exploratory Data Analysis</a></li>
   </ul>
 </nav>
 </nav>
@@ -182,26 +175,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="general-information-about-the-data" class="level2">
-<h2 class="anchored" data-anchor-id="general-information-about-the-data">General Information About the Data</h2>
+<section id="general-information-about-the-data" class="level4">
+<h4 class="anchored" data-anchor-id="general-information-about-the-data">General Information About the Data</h4>
 <p><em>This part is going to be updated soon…</em></p>
 <p><strong>Data source:</strong> <a href="https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Saglik-Arastirmasi-2022-49747">Turkey Health Survey 2022</a></p>
 </section>
-<section id="why-we-selected-this-data" class="level2">
-<h2 class="anchored" data-anchor-id="why-we-selected-this-data">Why We Selected This Data</h2>
+<section id="why-we-selected-this-data" class="level4">
+<h4 class="anchored" data-anchor-id="why-we-selected-this-data">Why We Selected This Data</h4>
 <p><em>This part is going to be updated soon…</em></p>
 </section>
-<section id="our-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="our-objectives">Our Objectives</h2>
+<section id="our-objectives" class="level4">
+<h4 class="anchored" data-anchor-id="our-objectives">Our Objectives</h4>
 <p><em>This part is going to be updated soon…</em></p>
 </section>
-<section id="importing-and-preprocessing-data-our-approach" class="level2">
-<h2 class="anchored" data-anchor-id="importing-and-preprocessing-data-our-approach">Importing and Preprocessing Data: Our Approach</h2>
+<section id="importing-and-preprocessing-data-our-approach" class="level4">
+<h4 class="anchored" data-anchor-id="importing-and-preprocessing-data-our-approach">Importing and Preprocessing Data: Our Approach</h4>
 <div style="text-align: justify">
 <p>Before importing our data, we manually cleaned it by removing Turkish text and unnecessary information. Then, we used the ‘<em>dplyr</em>’ and ‘<em>tidyr</em>’ packages to improve our understanding of the data. The relevant code is provided below.</p>
 </div>
-<section id="body-mass-index-distribution-of-individuals-by-sex-2008-2022" class="level3">
-<h3 class="anchored" data-anchor-id="body-mass-index-distribution-of-individuals-by-sex-2008-2022">Body Mass Index Distribution of Individuals by Sex, 2008-2022</h3>
+<p><strong>Body Mass Index Distribution of Individuals by Sex, 2008-2022 (Data Set 3)</strong></p>
 <div class="cell">
 <details>
 <summary>Show the code</summary>
@@ -209,9 +201,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>data_2 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"tidy_data_2.xls"</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(data_2) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Year"</span>, <span class="st">"Sex"</span>, <span class="st">"Underweight"</span>, <span class="st">"Normal_weight"</span>, <span class="st">"Pre_Obese"</span>, <span class="st">"Obese"</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>data_2_long <span class="ot">&lt;-</span> data_2 <span class="sc">%&gt;%</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>data_3 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"tidydataset3.xls"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(data_3) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Year"</span>, <span class="st">"Sex"</span>, <span class="st">"Underweight"</span>, <span class="st">"Normal_weight"</span>, <span class="st">"Pre_Obese"</span>, <span class="st">"Obese"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>data_3_long <span class="ot">&lt;-</span> data_3 <span class="sc">%&gt;%</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(Underweight, Normal_weight, Pre_Obese, Obese),</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">"Category"</span>,</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">"Percentage"</span>) <span class="sc">%&gt;%</span></span>
@@ -222,7 +214,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>sex_group)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-</section>
 </section>
 <section id="exploratory-data-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="exploratory-data-analysis">Exploratory Data Analysis</h2>

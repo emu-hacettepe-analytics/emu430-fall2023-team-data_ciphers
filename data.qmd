@@ -2,27 +2,27 @@
 title: "Data"
 ---
 
-## General Information About the Data
+#### General Information About the Data
 
 *This part is going to be updated soon...*
 
 **Data source:** [Turkey Health Survey 2022](https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Saglik-Arastirmasi-2022-49747)
 
-## Why We Selected This Data
+#### Why We Selected This Data
 
 *This part is going to be updated soon...*
 
-## Our Objectives
+#### Our Objectives
 
 *This part is going to be updated soon...*
 
-## Importing and Preprocessing Data: Our Approach
+#### Importing and Preprocessing Data: Our Approach
 
 ::: {style="text-align: justify"}
 Before importing our data, we manually cleaned it by removing Turkish text and unnecessary information. Then, we used the '*dplyr*' and '*tidyr*' packages to improve our understanding of the data. The relevant code is provided below.
 :::
 
-### Body Mass Index Distribution of Individuals by Sex, 2008-2022
+**Body Mass Index Distribution of Individuals by Sex, 2008-2022 (Data Set 3)**
 
 ```{r}
 #| code-fold: true
@@ -31,9 +31,9 @@ suppressPackageStartupMessages(library(dplyr))
 library(readxl)
 library(dplyr)
 library(tidyr)
-data_2 <- read_excel("tidy_data_2.xls")
-colnames(data_2) <- c("Year", "Sex", "Underweight", "Normal_weight", "Pre_Obese", "Obese")
-data_2_long <- data_2 %>%
+data_3 <- read_excel("tidydataset3.xls")
+colnames(data_3) <- c("Year", "Sex", "Underweight", "Normal_weight", "Pre_Obese", "Obese")
+data_3_long <- data_3 %>%
   pivot_longer(cols = c(Underweight, Normal_weight, Pre_Obese, Obese),
                names_to = "Category",
                values_to = "Percentage") %>%
