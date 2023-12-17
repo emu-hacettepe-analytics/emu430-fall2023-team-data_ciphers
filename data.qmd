@@ -42,6 +42,7 @@ This study includes three data-sets:
 ```{r}
 #| code-fold: true
 #| code-summary: "Show the code"
+suppressPackageStartupMessages(library(dplyr))
 library(readxl)
 library(dplyr)
 library(tidyr)
