@@ -125,15 +125,9 @@ In the data pre-processing phase, we used ChatGPT to provide necessary functions
 
 ## Exploratory Data Analysis
 
----
-title: "Analysis"
----
-
-## EXPLATORY ANALYSIS
-
 In our project, we are working on three data sets, all of which were sourced from the *Turkish Statistical Institute's* ***Türkiye Health Survey*** that was conducted in 2022.
 
-### Dataset 1 : The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022
+### Dataset 1 : The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022 {toc-text="Dataset 1"}
 
 This data set showcases the percentage of health problems by sex. Only people over the age of 15 were considered for the study, and Alzheimer was evaluated for individuals in the 65+ age group.
 
@@ -151,7 +145,7 @@ datatable(dataset_1)
 
 ![The distribution of declared health problems for both genders, 2022](2022_dataset_1.png)
 
-### Data Set 2 : The Percentage of Individuals' Status of Alcohol Use by Sex and Age Group, 2016-2022
+### Data Set 2 : The Percentage of Individuals' Status of Alcohol Use by Sex and Age Group, 2016-2022 {toc-text="Dataset 2"}
 
 This data set showcases the percentage of individuals' alcohol consumption status by sex and age group.
 
@@ -172,7 +166,7 @@ We can further understand this data by visualizing it via a bar chart, as shown 
 
 ![The distribution of alcohol consumption habits for both genders; 2016, 2019, 2022](chart_dataset_2.png)
 
-### Data Set 3 : Body mass index distribution of individuals by sex, 2008-2022
+### Data Set 3 : Body mass index distribution of individuals by sex, 2008-2022 {toc-text="Dataset 3"}
 
 This data set showcases the body mass index distribution of male and female individuals, as well as a total for the year of each sub-study. The data here was collected every two years starting from 2008, and ending at 2022.
 
