@@ -29,22 +29,16 @@ Please stay tuned to follow our project activities.
 
 ![](medical.gif){fig-align="center" width="218"}
 
-::: {style="text-align: justify"}
-<<<<<<< Updated upstream
-The Türkiye Health Survey aims to uncover people's overall health and gather information about key health indicators that are important for understanding a country's development. This study is designed to facilitate international comparisons and provide insights into national health needs. (TurkStat, 2023)[^1]
+::: {style="text-align: justify"} \<\<\<\<\<\<\< Updated upstream The Türkiye Health Survey aims to uncover people's overall health and gather information about key health indicators that are important for understanding a country's development. This study is designed to facilitate international comparisons and provide insights into national health needs. (TurkStat, 2023)[^1]
+
+[^1]: Turkish Statistical Institute. (2023). *Türkiye Health Survey, 2022*. <https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Health-Survey-2022-49747>
 
 In this study, we are focused on analyzing the distribution of main diseases/health problems, status of alcohol use and body mass indexes among individuals by sex.
 
 The Turkey Health Survey aims to uncover people's overall health and gather information about key health indicators that are important for understanding a country's development. This study is designed to facilitate international comparisons and provide insights into national health needs.
 
-
-
-[^1]: Turkish Statistical Institute. (2023). *Türkiye Health Survey, 2022*. <https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Health-Survey-2022-49747>
-
 # Data Set
 
-[Raw data set 1](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/dataset1.xls)
+[The percentage of main diseases/health problems declared by individuals in the last 12 months by sex, 2016-2022](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/dataset1.xls)
 
-[Raw data set 2](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/dataset2.xls)
-
-
+[Bireylerin alkol kullanma durumunun cinsiyet ve yaş grubuna göre dağılımı, 2016-2022](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/dataset2.xls)
