@@ -133,8 +133,8 @@ This data set showcases the percentage of health problems by sex. Only people ov
 
 ```{r}
 #| echo: false
-library(DT)
-dataset_1 <- read_xls("tidydataset1.xls")
+library(readxl)
+dataset_1 <- readxl::read_excel("tidy1.xlsx")
 head(dataset_1)
 ```
 
