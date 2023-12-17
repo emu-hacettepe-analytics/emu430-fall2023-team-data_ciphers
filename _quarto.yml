@@ -30,8 +30,8 @@ format:
     toc: true
     toc-location: left
     theme: 
-      light: lux 
-      dark: lux
+      light: flatly 
+      dark: flatly
     css: styles.css
 
 

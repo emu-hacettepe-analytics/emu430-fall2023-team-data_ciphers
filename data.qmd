@@ -1,12 +1,21 @@
 ---
 title: "Data"
+format:
+  html:
+    toc: true
+    toc-depth: 6
+    toc-title: Contents
+    toc-location: left
+    toc-expand: 5
+    smooth-scroll: true
+    anchor-sections: true
 ---
 
-### General Information About the Data
+## General Information About the Data
 
 *This part is going to be updated soon...*
 
-**Data source:** [Turkey Health Survey 2022](https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Saglik-Arastirmasi-2022-49747)
+**Data source:** [Türkiye Health Survey 2022](https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Saglik-Arastirmasi-2022-49747)
 
 ### Why We Selected This Data
 
@@ -16,13 +25,13 @@ title: "Data"
 
 *This part is going to be updated soon...*
 
-### Importing and Preprocessing Data: Our Approach
+## Importing and Preprocessing Data: Our Approach
 
-::: {style="text-align: justify"}
 Before importing our data, we manually cleaned it by removing Turkish text and unnecessary information. Then, we used the '*dplyr*' and '*tidyr*' packages to improve our understanding of the data. The relevant code is provided below.
-:::
 
-#### The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022 (Dataset 1)
+This study includes three datasets:
+
+### **Percentage of Health Problems in the Last 12 Months by Sex, 2016-2022**
 
 ```{r}
 #| code-fold: true
@@ -30,7 +39,7 @@ Before importing our data, we manually cleaned it by removing Turkish text and u
 
 ```
 
-#### The Percentage of Individuals' Status of Alcohol Use by Sex and Age Group, 2016-2022 (Dataset 2)
+### **Percentage of Status of Alcohol Use by Sex and Age Group, 2016-2022**
 
 ```{r}
 #| code-fold: true
@@ -52,7 +61,7 @@ data_2_longer <- data_2 %>%
   na.omit()
 ```
 
-#### Body Mass Index Distribution of Individuals by Sex, 2008-2022 (Dataset 3)
+### **Body Mass Index Distribution of Individuals by Sex, 2008-2022**
 
 ```{r}
 #| code-fold: true
@@ -75,6 +84,6 @@ data_3_long <- data_3 %>%
   select(-sex_group)
 ```
 
-### Exploratory Data Analysis
+## Exploratory Data Analysis
 
 *This part is going to be updated soon...*

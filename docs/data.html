@@ -96,6 +96,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -143,14 +144,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="5">
+    <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#general-information-about-the-data" id="toc-general-information-about-the-data" class="nav-link active" data-scroll-target="#general-information-about-the-data">General Information About the Data</a></li>
+  <li><a href="#general-information-about-the-data" id="toc-general-information-about-the-data" class="nav-link active" data-scroll-target="#general-information-about-the-data">General Information About the Data</a>
+  <ul>
   <li><a href="#why-we-selected-this-data" id="toc-why-we-selected-this-data" class="nav-link" data-scroll-target="#why-we-selected-this-data">Why We Selected This Data</a></li>
   <li><a href="#our-objectives" id="toc-our-objectives" class="nav-link" data-scroll-target="#our-objectives">Our Objectives</a></li>
-  <li><a href="#importing-and-preprocessing-data-our-approach" id="toc-importing-and-preprocessing-data-our-approach" class="nav-link" data-scroll-target="#importing-and-preprocessing-data-our-approach">Importing and Preprocessing Data: Our Approach</a></li>
+  </ul></li>
+  <li><a href="#importing-and-preprocessing-data-our-approach" id="toc-importing-and-preprocessing-data-our-approach" class="nav-link" data-scroll-target="#importing-and-preprocessing-data-our-approach">Importing and Preprocessing Data: Our Approach</a>
+  <ul>
+  <li><a href="#percentage-of-health-problems-in-the-last-12-months-by-sex-2016-2022" id="toc-percentage-of-health-problems-in-the-last-12-months-by-sex-2016-2022" class="nav-link" data-scroll-target="#percentage-of-health-problems-in-the-last-12-months-by-sex-2016-2022"><strong>Percentage of Health Problems in the Last 12 Months by Sex, 2016-2022</strong></a></li>
+  <li><a href="#percentage-of-status-of-alcohol-use-by-sex-and-age-group-2016-2022" id="toc-percentage-of-status-of-alcohol-use-by-sex-and-age-group-2016-2022" class="nav-link" data-scroll-target="#percentage-of-status-of-alcohol-use-by-sex-and-age-group-2016-2022"><strong>Percentage of Status of Alcohol Use by Sex and Age Group, 2016-2022</strong></a></li>
+  <li><a href="#body-mass-index-distribution-of-individuals-by-sex-2008-2022" id="toc-body-mass-index-distribution-of-individuals-by-sex-2008-2022" class="nav-link" data-scroll-target="#body-mass-index-distribution-of-individuals-by-sex-2008-2022"><strong>Body Mass Index Distribution of Individuals by Sex, 2008-2022</strong></a></li>
+  </ul></li>
   <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link" data-scroll-target="#exploratory-data-analysis">Exploratory Data Analysis</a></li>
   </ul>
 </nav>
@@ -179,11 +187,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="general-information-about-the-data" class="level3">
-<h3 class="anchored" data-anchor-id="general-information-about-the-data">General Information About the Data</h3>
+<section id="general-information-about-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="general-information-about-the-data">General Information About the Data</h2>
 <p><em>This part is going to be updated soon…</em></p>
-<p><strong>Data source:</strong> <a href="https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Saglik-Arastirmasi-2022-49747">Turkey Health Survey 2022</a></p>
-</section>
+<p><strong>Data source:</strong> <a href="https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Saglik-Arastirmasi-2022-49747">Türkiye Health Survey 2022</a></p>
 <section id="why-we-selected-this-data" class="level3">
 <h3 class="anchored" data-anchor-id="why-we-selected-this-data">Why We Selected This Data</h3>
 <p><em>This part is going to be updated soon…</em></p>
@@ -192,16 +199,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="our-objectives">Our Objectives</h3>
 <p><em>This part is going to be updated soon…</em></p>
 </section>
-<section id="importing-and-preprocessing-data-our-approach" class="level3">
-<h3 class="anchored" data-anchor-id="importing-and-preprocessing-data-our-approach">Importing and Preprocessing Data: Our Approach</h3>
-<div style="text-align: justify">
-<p>Before importing our data, we manually cleaned it by removing Turkish text and unnecessary information. Then, we used the ‘<em>dplyr</em>’ and ‘<em>tidyr</em>’ packages to improve our understanding of the data. The relevant code is provided below.</p>
-</div>
-<section id="the-percentage-of-main-diseaseshealth-problems-declared-by-individuals-in-the-last-12-months-by-sex-2016-2022-dataset-1" class="level4">
-<h4 class="anchored" data-anchor-id="the-percentage-of-main-diseaseshealth-problems-declared-by-individuals-in-the-last-12-months-by-sex-2016-2022-dataset-1">The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022 (Dataset 1)</h4>
 </section>
-<section id="the-percentage-of-individuals-status-of-alcohol-use-by-sex-and-age-group-2016-2022-dataset-2" class="level4">
-<h4 class="anchored" data-anchor-id="the-percentage-of-individuals-status-of-alcohol-use-by-sex-and-age-group-2016-2022-dataset-2">The Percentage of Individuals’ Status of Alcohol Use by Sex and Age Group, 2016-2022 (Dataset 2)</h4>
+<section id="importing-and-preprocessing-data-our-approach" class="level2">
+<h2 class="anchored" data-anchor-id="importing-and-preprocessing-data-our-approach">Importing and Preprocessing Data: Our Approach</h2>
+<p>Before importing our data, we manually cleaned it by removing Turkish text and unnecessary information. Then, we used the ‘<em>dplyr</em>’ and ‘<em>tidyr</em>’ packages to improve our understanding of the data. The relevant code is provided below.</p>
+<p>This study includes three datasets:</p>
+<section id="percentage-of-health-problems-in-the-last-12-months-by-sex-2016-2022" class="level3">
+<h3 class="anchored" data-anchor-id="percentage-of-health-problems-in-the-last-12-months-by-sex-2016-2022"><strong>Percentage of Health Problems in the Last 12 Months by Sex, 2016-2022</strong></h3>
+</section>
+<section id="percentage-of-status-of-alcohol-use-by-sex-and-age-group-2016-2022" class="level3">
+<h3 class="anchored" data-anchor-id="percentage-of-status-of-alcohol-use-by-sex-and-age-group-2016-2022"><strong>Percentage of Status of Alcohol Use by Sex and Age Group, 2016-2022</strong></h3>
 <div class="cell">
 <details>
 <summary>Show the code</summary>
@@ -223,8 +230,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="body-mass-index-distribution-of-individuals-by-sex-2008-2022-dataset-3" class="level4">
-<h4 class="anchored" data-anchor-id="body-mass-index-distribution-of-individuals-by-sex-2008-2022-dataset-3">Body Mass Index Distribution of Individuals by Sex, 2008-2022 (Dataset 3)</h4>
+<section id="body-mass-index-distribution-of-individuals-by-sex-2008-2022" class="level3">
+<h3 class="anchored" data-anchor-id="body-mass-index-distribution-of-individuals-by-sex-2008-2022"><strong>Body Mass Index Distribution of Individuals by Sex, 2008-2022</strong></h3>
 <div class="cell">
 <details>
 <summary>Show the code</summary>
@@ -248,8 +255,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 </section>
-<section id="exploratory-data-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="exploratory-data-analysis">Exploratory Data Analysis</h3>
+<section id="exploratory-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="exploratory-data-analysis">Exploratory Data Analysis</h2>
 <p><em>This part is going to be updated soon…</em></p>
 
 
@@ -619,4 +626,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
