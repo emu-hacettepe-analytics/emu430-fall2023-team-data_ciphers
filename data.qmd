@@ -138,10 +138,6 @@ dataset_1 <- readxl::read_excel("tidy1.xlsx")
 dataset_1
 ```
 
-::: callout-important
-This section was prepared based on the old data set it is going to be updated soon.
-:::
-
 The first column, titled *Diseases* corresponds to the diseases, and the following columns represent the gender of the individual, the year the data was collected and the percentage information respectively.. If we take a look at the visualization of the data as presented below we can see that low back problems are consistently what causes the most issues, in both men and women. In general, women have declared their health problems more than men for all years that were considered for the study.
 
 ![The distribution of declared health problems for both genders, 2016](2016_dataset_1.png)
@@ -154,10 +150,6 @@ The first column, titled *Diseases* corresponds to the diseases, and the followi
 
 This data set showcases the percentage of individuals' alcohol consumption status by sex and age group.
 
-::: callout-important
-This section was prepared based on the old data set it is going to be updated soon.
-:::
-
 The first column of the table below shows the various age ranges from the study, starting from age 15 and going all the way up to 75+.
 
 The second column, titled *usage*, has three different field values: \* Consumers : Indicates the individual partakes in regular alcohol consumption. \* Doesn't consume : Means the individual has consumed alcohol before, but not anymore/not regularly. \* Never consume : Indicates the individual has never consumed alcohol before.
@@ -168,10 +160,6 @@ library(readxl)
 dataset_2 <- readxl::read_excel("tidy2.xlsx")
 dataset_2
 ```
-
-::: callout-important
-This section was prepared based on the old data set it is going to be updated soon.
-:::
 
 The third column shows the gender of the individuals that took part in the study, followed by the year on column 4 and the percentages on column 5.
 
@@ -189,9 +177,15 @@ library(readxl)
 dataset_3 <- readxl::read_excel("tidy3.xlsx")
 dataset_3
 ```
+
 The first column has year information. The second column indicates whether the individual is male or female. *Category* column has four field values:
-* Underweight
-* Normal weight
-* Pre-obese
-* Obese
+
+\* Underweight
+
+\* Normal weight
+
+\* Pre-obese
+
+\* Obese
+
 The last column showcases the percentage information.
