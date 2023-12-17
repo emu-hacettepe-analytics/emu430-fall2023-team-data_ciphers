@@ -37,4 +37,6 @@ In this study, we are focused on analyzing the distribution of main diseases/hea
 
 # Data Set
 
-*This part is going to be updated soon...*
+[Percentage of Health Problems in the Last 12 Months by Sex 2016-2022](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/dataset1.xls)
+
+[Percentage of Status of Alcohol Use by Sex and Age Group 2016-2022](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/dataset2.xls)
