@@ -9,6 +9,8 @@ format:
     toc-expand: 5
     smooth-scroll: true
     anchor-sections: true
+    include-after-body: abbrv_toc.html
+    number-sections: true
 ---
 
 ## General Information About the Data
@@ -31,7 +33,7 @@ Before importing our data, we manually cleaned it by removing Turkish text and u
 
 This study includes three datasets:
 
-### **Percentage of Health Problems in the Last 12 Months by Sex, 2016-2022**
+### **Percentage of Health Problems in the Last 12 Months by Sex, 2016-2022** {toc-text="Dataset 1"}
 
 ```{r}
 #| code-fold: true
@@ -39,8 +41,7 @@ This study includes three datasets:
 
 ```
 
-### **Percentage of Status of Alcohol Use by Sex and Age Group, 2016-2022**
-
+### **Percentage of Status of Alcohol Use by Sex and Age Group, 2016-2022** {toc-text="Dataset 2"}
 ```{r}
 #| code-fold: true
 #| code-summary: "Show the code"
@@ -61,7 +62,7 @@ data_2_longer <- data_2 %>%
   na.omit()
 ```
 
-### **Body Mass Index Distribution of Individuals by Sex, 2008-2022**
+### **Body Mass Index Distribution of Individuals by Sex, 2008-2022** {toc-text="Dataset 3"}
 
 ```{r}
 #| code-fold: true
