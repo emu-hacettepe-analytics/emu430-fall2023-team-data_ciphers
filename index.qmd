@@ -17,11 +17,15 @@ Please stay tuned to follow our project activities.
 
 3.  [Ceren Arslan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-ccerenarslan/)
 
-4.  [Doğa Oral](https://tr.wikipedia.org/wiki/Sebastian_Szyma%C5%84ski)
+4.  [Doğa Oral](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/blob/master/giphy2.gif?raw=true)
 
 5.  [Mert Bekir Kaplan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-mer7kaplan/)
 
-6.  [Şeyma Çeliker](https://tr.wikipedia.org/wiki/Mauro_Icardi)
+6.  [Şeyma Çeliker](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/blob/master/giphy2.gif?raw=true)
+
+::: {.callout-important}
+Those of group members whose page links are not working indicates that they haven't participated in the project. Please make sure to update your personal link.
+:::
 
 # Project Topic
 
