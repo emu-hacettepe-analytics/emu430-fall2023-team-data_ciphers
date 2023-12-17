@@ -19,7 +19,7 @@ format:
 
 *This part is going to be updated soon...*
 
-**Data source:** [Türkiye Health Survey 2022](https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Saglik-Arastirmasi-2022-49747)
+**Data source:** [TC<rkiye Health Survey 2022](https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Saglik-Arastirmasi-2022-49747)
 
 ### Why We Selected This Data
 
@@ -43,6 +43,24 @@ This study includes three data-sets:
 #| code-fold: true
 #| code-summary: "Show the code"
 
+library(readxl)
+library(dplyr)
+library(tidyr)
+
+
+data_3 <- read_excel("survey_data_3.xls")
+colnames(data_3) <- c("Diseases", "men_2016", "women_2016", "men_2019", "women_2019", "men_2022", "women_2022")
+
+data_3_longer <- data_3 %>%
+  pivot_longer(cols = starts_with(c("men", "women")),
+               names_to = "Gender",
+               values_to = "Percentage") %>%
+  separate(Gender, into = c("Gender", "Year"), sep = "_") %>%
+  arrange(Diseases) %>%
+  mutate_at(vars(Year, Percentage), as.numeric) %>%
+  mutate(Diseases = gsub("^\\n", "", Diseases))
+
+data_3_longer 
 ```
 
 [Click here to download the associated .RData file for Dataset1.](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/tidy_dataset_1.RData)
