@@ -29,7 +29,9 @@ format:
 
 ## Importing and Preprocessing Data: Our Approach
 
+::: {style="text-align: justify"}
 Before importing our data, we manually cleaned it by removing Turkish text and unnecessary information. Then, we used the '*dplyr*' and '*tidyr*' packages to improve our understanding of the data. The relevant code is provided below.
+:::
 
 This study includes three datasets:
 
