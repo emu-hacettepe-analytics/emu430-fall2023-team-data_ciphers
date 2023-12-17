@@ -7,11 +7,18 @@
     "text": "Welcome :) This is our project webpage\nPlease stay tuned to follow our project activities."
   },
   {
-    "objectID": "index.html#turkey-health-survey",
-    "href": "index.html#turkey-health-survey",
+    "objectID": "index.html#türkiye-health-survey-2022",
+    "href": "index.html#türkiye-health-survey-2022",
     "title": "Data Ciphers",
-    "section": "Turkey Health Survey",
-    "text": "Turkey Health Survey\n\n\n\n\n\n\nThe Turkey Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs.\nThis part is going to be updated soon…"
+    "section": "Türkiye Health Survey, 2022",
+    "text": "Türkiye Health Survey, 2022\n\n\n\n\n\nThe Türkiye Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs. (TurkStat, 2023)1\nIn this study, we are focused on analyzing the distribution of main diseases/health problems, status of alcohol use and body mass indexes among individuals by sex."
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Data Ciphers",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nTurkish Statistical Institute. (2023). Türkiye Health Survey, 2022. https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Health-Survey-2022-49747↩︎"
   },
   {
     "objectID": "analysis.html",
@@ -35,20 +42,6 @@
     "text": "This part is going to be updated soon…\nData source: Türkiye Health Survey 2022\n\n\nThis part is going to be updated soon…\n\n\n\nThis part is going to be updated soon…"
   },
   {
-    "objectID": "data.html#why-we-selected-this-data",
-    "href": "data.html#why-we-selected-this-data",
-    "title": "Data",
-    "section": "Why We Selected This Data",
-    "text": "Why We Selected This Data\nThis part is going to be updated soon…"
-  },
-  {
-    "objectID": "data.html#our-objectives",
-    "href": "data.html#our-objectives",
-    "title": "Data",
-    "section": "Our Objectives",
-    "text": "Our Objectives\nThis part is going to be updated soon…"
-  },
-  {
     "objectID": "data.html#importing-and-preprocessing-data-our-approach",
     "href": "data.html#importing-and-preprocessing-data-our-approach",
     "title": "Data",
@@ -61,26 +54,5 @@
     "title": "Data",
     "section": "3 Exploratory Data Analysis",
     "text": "3 Exploratory Data Analysis\nThis part is going to be updated soon…"
-  },
-  {
-    "objectID": "index.html#türkiye-health-survey",
-    "href": "index.html#türkiye-health-survey",
-    "title": "Data Ciphers",
-    "section": "Türkiye Health Survey",
-    "text": "Türkiye Health Survey\n\n\n\n\n\n\nThe Türkiye Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs. (TurkStat, 2023)1\nIn this study, we are focudes on analyzing the distribution of main diseases/health problems, status of alcohol use and body mass indexes among individuals by sex."
-  },
-  {
-    "objectID": "index.html#footnotes",
-    "href": "index.html#footnotes",
-    "title": "Data Ciphers",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nTurkish Statistical Institute. (2023). Türkiye Health Survey, 2022. https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Health-Survey-2022-49747↩︎"
-  },
-  {
-    "objectID": "index.html#türkiye-health-survey-2022",
-    "href": "index.html#türkiye-health-survey-2022",
-    "title": "Data Ciphers",
-    "section": "Türkiye Health Survey, 2022",
-    "text": "Türkiye Health Survey, 2022\n\n\n\n\n\nThe Türkiye Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs. (TurkStat, 2023)1\nIn this study, we are focused on analyzing the distribution of main diseases/health problems, status of alcohol use and body mass indexes among individuals by sex."
   }
 ]
