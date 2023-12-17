@@ -42,7 +42,6 @@ This study includes three data-sets:
 ```{r}
 #| code-fold: true
 #| code-summary: "Show the code"
-
 library(readxl)
 library(dplyr)
 library(tidyr)
@@ -59,8 +58,6 @@ data_3_longer <- data_3 %>%
   arrange(Diseases) %>%
   mutate_at(vars(Year, Percentage), as.numeric) %>%
   mutate(Diseases = gsub("^\\n", "", Diseases))
-
-data_3_longer 
 ```
 
 [Click here to download the associated .RData file for Dataset1.](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/tidy_dataset_1.RData)
