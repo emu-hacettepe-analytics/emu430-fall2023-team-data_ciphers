@@ -13,7 +13,7 @@ format:
     number-sections: true
 ---
 
-![](giphy.gif){width="382"}
+![](giphy.gif){width="437"}
 
 ## General Information About the Data
 

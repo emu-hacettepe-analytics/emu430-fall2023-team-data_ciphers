@@ -62,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -135,11 +136,30 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><img src="giphy1.gif" class="img-fluid" width="407"></p>
+<p>Stay tuned for the updates.</p>
+<p><img src="giphy1.gif" class="img-fluid" width="310"></p>
 
 
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script>
+  function abbrv_toc() {
+    let toc = document.querySelectorAll('nav#TOC li>a');
+    toc.forEach(e => {
+      let id = e.id.substring(4);
+      let sec = document.getElementById(id);
+      let toc_text = sec.getAttribute('data-toc-text');
+      if(toc_text != null) {
+        let new_toc_text = e.querySelector('span').outerHTML + ' ' + toc_text;
+        e.innerHTML = new_toc_text;
+      }
+    })
+  };
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    abbrv_toc();
+  });
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -503,4 +523,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
