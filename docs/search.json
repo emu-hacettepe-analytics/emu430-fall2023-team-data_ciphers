@@ -53,7 +53,7 @@
     "href": "data.html#importing-and-preprocessing-data-our-approach",
     "title": "Data",
     "section": "Importing and Preprocessing Data: Our Approach",
-    "text": "Importing and Preprocessing Data: Our Approach\n\nBefore importing our data, we manually cleaned it by removing Turkish text and unnecessary information. Then, we used the ‘dplyr’ and ‘tidyr’ packages to improve our understanding of the data. The relevant code is provided below."
+    "text": "Importing and Preprocessing Data: Our Approach\n\nBefore importing our data, we manually cleaned it by removing Turkish text and unnecessary information. Then, we used the ‘dplyr’ and ‘tidyr’ packages to improve our understanding of the data. The relevant code is provided below.\n\n\nBody Mass Index Distribution of Individuals by Sex, 2008-2022\n\n\nShow the code\nsuppressPackageStartupMessages(library(dplyr))\nlibrary(readxl)\nlibrary(dplyr)\nlibrary(tidyr)\ndata_2 &lt;- read_excel(\"tidy_data_2.xls\")\ncolnames(data_2) &lt;- c(\"Year\", \"Sex\", \"Underweight\", \"Normal_weight\", \"Pre_Obese\", \"Obese\")\ndata_2_long &lt;- data_2 %&gt;%\n  pivot_longer(cols = c(Underweight, Normal_weight, Pre_Obese, Obese),\n               names_to = \"Category\",\n               values_to = \"Percentage\") %&gt;%\n  mutate(sex_group = ifelse(Sex == \"Total\", \"Total\", \"Individual\")) %&gt;%\n  group_by(sex_group) %&gt;%\n  ungroup() %&gt;%\n  dplyr::filter(Sex != \"Total\" | n() == 1) %&gt;%\n  select(-sex_group)"
   },
   {
     "objectID": "data.html#exploratory-data-analysis",
@@ -81,6 +81,6 @@
     "href": "index.html#türkiye-health-survey-2022",
     "title": "Data Ciphers",
     "section": "Türkiye Health Survey, 2022",
-    "text": "Türkiye Health Survey, 2022\n\n\n\n\n\n\nThe Türkiye Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs. (TurkStat, 2023)1\nIn this study, we are focused on analyzing the distribution of main diseases/health problems, status of alcohol use and body mass indexes among individuals by sex."
+    "text": "Türkiye Health Survey, 2022\n\n\n\n\n\n::: {style=“text-align: justify”} &lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream The Türkiye Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs. (TurkStat, 2023)1\nIn this study, we are focused on analyzing the distribution of main diseases/health problems, status of alcohol use and body mass indexes among individuals by sex.\nThe Turkey Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs."
   }
 ]

@@ -39,6 +39,12 @@ The Turkey Health Survey aims to uncover people's overall health and gather info
 
 # Data Set
 
+<<<<<<< Updated upstream
 [The percentage of main diseases/health problems declared by individuals in the last 12 months by sex, 2016-2022](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/dataset1.xls)
 
 [The percentage of individuals' status of alcohol use by sex and age group, 2016-2022](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/dataset2.xls)
+=======
+[Raw data set 1](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/dataset1.xls)
+
+[Raw data set 2](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/dataset2.xls)
+
