@@ -43,6 +43,8 @@ This study includes three datasets:
 
 ```
 
+[Click here to download the associated .RData file for Dataset1.](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/tidy_dataset_1.RData)
+
 ### **Percentage of Status of Alcohol Use by Sex and Age Group, 2016-2022** {toc-text="Dataset 2"}
 
 ```{r}
@@ -64,6 +66,8 @@ data_2_longer <- data_2 %>%
   mutate_at(vars(year, rate), as.numeric) %>%
   na.omit()
 ```
+
+[Click here to download the associated .RData file for Dataset2.](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/tidy_dataset_2.RData)
 
 ### **Body Mass Index Distribution of Individuals by Sex, 2008-2022** {toc-text="Dataset 3"}
 
@@ -87,6 +91,8 @@ data_3_long <- data_3 %>%
   dplyr::filter(Sex != "Total" | n() == 1) %>%
   select(-sex_group)
 ```
+
+[Click here to download the associated .RData file for Dataset3.](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/blob/master/tidy_dataset_3.RData)
 
 ## Exploratory Data Analysis
 
