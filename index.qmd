@@ -25,15 +25,17 @@ Please stay tuned to follow our project activities.
 
 # Project Topic
 
-## Turkey Health Survey
+## Türkiye Health Survey, 2022
 
 ![](medical.gif){fig-align="center" width="218"}
 
 ::: {style="text-align: justify"}
-The Turkey Health Survey aims to uncover people's overall health and gather information about key health indicators that are important for understanding a country's development. This study is designed to facilitate international comparisons and provide insights into national health needs.
+The Türkiye Health Survey aims to uncover people's overall health and gather information about key health indicators that are important for understanding a country's development. This study is designed to facilitate international comparisons and provide insights into national health needs. (TurkStat, 2023)[^1]
 
-*This part is going to be updated soon...*
+In this study, we are focused on analyzing the distribution of main diseases/health problems, status of alcohol use and body mass indexes among individuals by sex.
 :::
+
+[^1]: Turkish Statistical Institute. (2023). *Türkiye Health Survey, 2022*. <https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Health-Survey-2022-49747>
 
 # Data Set
 
