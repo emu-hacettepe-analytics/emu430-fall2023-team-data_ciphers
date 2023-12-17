@@ -45,8 +45,6 @@ This study includes three data-sets:
 library(readxl)
 library(dplyr)
 library(tidyr)
-
-
 data_3 <- read_excel("tidydataset1.xls")
 colnames(data_3) <- c("Diseases", "men_2016", "women_2016", "men_2019", "women_2019", "men_2022", "women_2022")
 
