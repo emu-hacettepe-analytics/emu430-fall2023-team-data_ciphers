@@ -11,7 +11,7 @@
     "href": "index.html#turkey-health-survey",
     "title": "Data Ciphers",
     "section": "Turkey Health Survey",
-    "text": "Turkey Health Survey\n\n\n\n\n\n\nThe Turkey Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs."
+    "text": "Turkey Health Survey\n\n\n\n\n\n\nThe Turkey Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs.\nThis part is going to be updated soon…"
   },
   {
     "objectID": "analysis.html",
@@ -25,6 +25,41 @@
     "href": "data.html",
     "title": "Data",
     "section": "",
-    "text": "Data source: Turkey Health Survey, 2022\n\n\n\n Back to top"
+    "text": "This part is going to be updated soon…\nData source: Turkey Health Survey 2022"
+  },
+  {
+    "objectID": "data.html#general-information-about-the-data",
+    "href": "data.html#general-information-about-the-data",
+    "title": "Data",
+    "section": "",
+    "text": "This part is going to be updated soon…\nData source: Turkey Health Survey 2022"
+  },
+  {
+    "objectID": "data.html#why-we-selected-this-data",
+    "href": "data.html#why-we-selected-this-data",
+    "title": "Data",
+    "section": "Why We Selected This Data",
+    "text": "Why We Selected This Data\nThis part is going to be updated soon…"
+  },
+  {
+    "objectID": "data.html#our-objectives",
+    "href": "data.html#our-objectives",
+    "title": "Data",
+    "section": "Our Objectives",
+    "text": "Our Objectives\nThis part is going to be updated soon…"
+  },
+  {
+    "objectID": "data.html#importing-and-preprocessing-data-our-approach",
+    "href": "data.html#importing-and-preprocessing-data-our-approach",
+    "title": "Data",
+    "section": "Importing and Preprocessing Data: Our Approach",
+    "text": "Importing and Preprocessing Data: Our Approach\n\nBefore importing our data, we manually cleaned it by removing Turkish text and unnecessary information. Then, we used the ‘dplyr’ and ‘tidyr’ packages to improve our understanding of the data. The relevant code is provided below."
+  },
+  {
+    "objectID": "data.html#exploratory-data-analysis",
+    "href": "data.html#exploratory-data-analysis",
+    "title": "Data",
+    "section": "Exploratory Data Analysis",
+    "text": "Exploratory Data Analysis\nThis part is going to be updated soon…"
   }
 ]

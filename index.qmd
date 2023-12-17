@@ -31,8 +31,10 @@ Please stay tuned to follow our project activities.
 
 ::: {style="text-align: justify"}
 The Turkey Health Survey aims to uncover people's overall health and gather information about key health indicators that are important for understanding a country's development. This study is designed to facilitate international comparisons and provide insights into national health needs.
+
+*This part is going to be updated soon...*
 :::
 
 # Data Set
 
-[Deneme](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/alkol.xls)
+*This part is going to be updated soon...*

@@ -2,4 +2,26 @@
 title: "Data"
 ---
 
-Data source: [Turkey Health Survey, 2022](https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Saglik-Arastirmasi-2022-49747)
+## General Information About the Data
+
+*This part is going to be updated soon...*
+
+**Data source:** [Turkey Health Survey 2022](https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Saglik-Arastirmasi-2022-49747)
+
+## Why We Selected This Data
+
+*This part is going to be updated soon...*
+
+## Our Objectives
+
+*This part is going to be updated soon...*
+
+## Importing and Preprocessing Data: Our Approach
+
+::: {style="text-align: justify"}
+Before importing our data, we manually cleaned it by removing Turkish text and unnecessary information. Then, we used the '*dplyr*' and '*tidyr*' packages to improve our understanding of the data. The relevant code is provided below.
+:::
+
+## Exploratory Data Analysis
+
+*This part is going to be updated soon...*
