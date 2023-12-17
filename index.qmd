@@ -23,10 +23,6 @@ Please stay tuned to follow our project activities.
 
 6.  [Şeyma Çeliker](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/blob/master/giphy2.gif?raw=true)
 
-::: {.callout-important}
-Those of group members whose page links are not working indicates that they haven't participated in the project. Please make sure to update your personal link.
-:::
-
 # Project Topic
 
 ## Türkiye Health Survey, 2022
