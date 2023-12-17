@@ -11,7 +11,7 @@ Please stay tuned to follow our project activities.
 
 # Team Members
 
-1.  [Arda Türkan](https://tr.wikipedia.org/wiki/Edin_D%C5%BEeko)
+1.  [Arda Türkan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-ardaturkan/)
 
 2.  [Ayşenur Eren](https://emu-hacettepe-analytics.github.io/emu430-fall2023-AysenurErenn/)
 
