@@ -138,6 +138,10 @@ dataset_1 <- readxl::read_excel("tidy1.xlsx")
 dataset_1
 ```
 
+::: callout-important
+This section was prepared based on the old data set it is going to be updated soon.
+:::
+
 *Column 1* corresponds to the diseases, and the following columns are the percentages for Male *(Column 2,4,6)* and Female *(Column 3,5,7)* individuals in 2016, 2019 and 2022. If we take a look at the visualization of the data as presented below we can see that low back problems are consistently what causes the most issues, in both men and women. In general, women have declared their health problems more than men for all years that were considered for the study.
 
 ![The distribution of declared health problems for both genders, 2016](2016_dataset_1.png)
@@ -150,6 +154,10 @@ dataset_1
 
 This data set showcases the percentage of individuals' alcohol consumption status by sex and age group.
 
+::: callout-important
+This section was prepared based on the old data set it is going to be updated soon.
+:::
+
 *Column 1* indicates the age groups starting from 15 years and going all the way to 75+.
 
 *Column 8* has three different field values: \* Consumers : Indicates the individual partakes in regular alcohol consumption. \* Doesn't consume : Means the individual has consumed alcohol before, but not anymore/not regularly. \* Never consume : Indicates the individual has never consumed alcohol before.
@@ -160,6 +168,10 @@ library(readxl)
 dataset_2 <- readxl::read_excel("tidy2.xlsx")
 dataset_2
 ```
+
+::: callout-important
+This section was prepared based on the old data set it is going to be updated soon.
+:::
 
 *Columns 2, 4, and 6* represent the Male individuals considered in the study in years 2016, 2019 and 2022 respectively.
 
