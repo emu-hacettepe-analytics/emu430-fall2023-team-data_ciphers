@@ -135,7 +135,7 @@ This data set showcases the percentage of health problems by sex. Only people ov
 #| echo: false
 library(readxl)
 dataset_1 <- readxl::read_excel("tidy1.xlsx")
-head(dataset_1)
+head(dataset_1, n = 10)
 ```
 
 *Column 1* corresponds to the diseases, and the following columns are the percentages for Male *(Column 2,4,6)* and Female *(Column 3,5,7)* individuals in 2016, 2019 and 2022. If we take a look at the visualization of the data as presented below we can see that low back problems are consistently what causes the most issues, in both men and women. In general, women have declared their health problems more than men for all years that were considered for the study.

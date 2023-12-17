@@ -315,15 +315,19 @@ Note
 <p>This data set showcases the percentage of health problems by sex. Only people over the age of 15 were considered for the study, and Alzheimer was evaluated for individuals in the 65+ age group.</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 6 × 4
-  Diseases Gender  Year Percentage
-  &lt;chr&gt;    &lt;chr&gt;  &lt;dbl&gt;      &lt;dbl&gt;
-1 Allergy  men     2016       7.54
-2 Allergy  men     2019       8.93
-3 Allergy  men     2022       6.57
-4 Allergy  women   2016      13.9 
-5 Allergy  women   2019      15.6 
-6 Allergy  women   2022      12.5 </code></pre>
+<pre><code># A tibble: 10 × 4
+   Diseases  Gender  Year Percentage
+   &lt;chr&gt;     &lt;chr&gt;  &lt;dbl&gt;      &lt;dbl&gt;
+ 1 Allergy   men     2016       7.54
+ 2 Allergy   men     2019       8.93
+ 3 Allergy   men     2022       6.57
+ 4 Allergy   women   2016      13.9 
+ 5 Allergy   women   2019      15.6 
+ 6 Allergy   women   2022      12.5 
+ 7 Alzheimer men     2016       5.10
+ 8 Alzheimer men     2019       5.96
+ 9 Alzheimer men     2022       5.07
+10 Alzheimer women   2016       6.07</code></pre>
 </div>
 </div>
 <p><em>Column 1</em> corresponds to the diseases, and the following columns are the percentages for Male <em>(Column 2,4,6)</em> and Female <em>(Column 3,5,7)</em> individuals in 2016, 2019 and 2022. If we take a look at the visualization of the data as presented below we can see that low back problems are consistently what causes the most issues, in both men and women. In general, women have declared their health problems more than men for all years that were considered for the study.</p>
