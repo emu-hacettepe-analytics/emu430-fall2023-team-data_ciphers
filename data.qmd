@@ -138,7 +138,7 @@ dataset_1 <- readxl::read_excel("tidy1.xlsx")
 dataset_1
 ```
 
-The first column, titled *Diseases* corresponds to the diseases, and the following columns represent the gender of the individual, the year the data was collected and the percentage information respectively.. If we take a look at the visualization of the data as presented below we can see that low back problems are consistently what causes the most issues, in both men and women. In general, women have declared their health problems more than men for all years that were considered for the study.
+::: {style="text-align: justify The first column, titled *Diseases* corresponds to the diseases, and the following columns represent the gender of the individual, the year the data was collected and the percentage information respectively.. If we take a look at the visualization of the data as presented below we can see that low back problems are consistently what causes the most issues, in both men and women. In general, women have declared their health problems more than men for all years that were considered for the study. :::
 
 ![The distribution of declared health problems for both genders, 2016](2016_dataset_1.png)
 
@@ -152,7 +152,7 @@ This data set showcases the percentage of individuals' alcohol consumption statu
 
 The first column of the table below shows the various age ranges from the study, starting from age 15 and going all the way up to 75+.
 
-The second column, titled *usage*, has three different field values: \* Consumers : Indicates the individual partakes in regular alcohol consumption. \* Doesn't consume : Means the individual has consumed alcohol before, but not anymore/not regularly. \* Never consume : Indicates the individual has never consumed alcohol before.
+::: {style="text-align: justify The second column, titled *usage*, has three different field values: \* Consumers : Indicates the individual partakes in regular alcohol consumption. \* Doesn't consume : Means the individual has consumed alcohol before, but not anymore/not regularly. \* Never consume : Indicates the individual has never consumed alcohol before. :::
 
 ```{r}
 #| echo: false
@@ -169,7 +169,7 @@ We can further understand this data by visualizing it via a bar chart, as shown 
 
 ### Data Set 3 : Body mass index distribution of individuals by sex, 2008-2022 {toc-text="Dataset 3"}
 
-This data set showcases the body mass index distribution of male and female individuals, as well as a total for the year of each sub-study. The data here was collected every two years starting from 2008, and ending at 2022.
+::: {style="text-align: justify This data set showcases the body mass index distribution of male and female individuals, as well as a total for the year of each sub-study. The data here was collected every two years starting from 2008, and ending at 2022. :::
 
 ```{r}
 #| echo: false

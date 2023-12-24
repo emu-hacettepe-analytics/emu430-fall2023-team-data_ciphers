@@ -7,21 +7,24 @@ Welcome :) This is our project webpage
 
 Please stay tuned to follow our project activities.
 
-![](ourlogo.png){width="507"}
+![](data_ciphers.gif){width="400"}
 
 # Team Members
 
-1.  [Arda Türkan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-ardaturkan/)
+1.  [Mert Bekir Kaplan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-mer7kaplan/)
 
-2.  [Ayşenur Eren](https://emu-hacettepe-analytics.github.io/emu430-fall2023-AysenurErenn/)
+2.  [Doğa Oral](https://emu-hacettepe-analytics.github.io/emu430-fall2023-doaoral/)
 
-3.  [Ceren Arslan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-ccerenarslan/)
+3.  [Arda Türkan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-ardaturkan/)
 
-4.  [Doğa Oral](https://emu-hacettepe-analytics.github.io/emu430-fall2023-doaoral/)
+4.  [Ayşenur Eren](https://emu-hacettepe-analytics.github.io/emu430-fall2023-AysenurErenn/)
 
-5.  [Mert Bekir Kaplan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-mer7kaplan/)
+5.  [Ceren Arslan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-ccerenarslan/)
 
-6.  [Şeyma Çeliker](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/blob/master/giphy2.gif?raw=true)
+
+::: callout-important
+Members who did not contribute to the project are removed from the list.
+:::
 
 # Project Topic
 
