@@ -163,7 +163,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#dataset-1-the-percentage-of-main-diseaseshealth-problems-declared-by-individuals-in-the-last-12-months-by-sex-2016-2022" id="toc-dataset-1-the-percentage-of-main-diseaseshealth-problems-declared-by-individuals-in-the-last-12-months-by-sex-2016-2022" class="nav-link" data-scroll-target="#dataset-1-the-percentage-of-main-diseaseshealth-problems-declared-by-individuals-in-the-last-12-months-by-sex-2016-2022"><span class="header-section-number">3.1</span> Dataset 1 : The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022</a></li>
   <li><a href="#data-set-2-the-percentage-of-individuals-status-of-alcohol-use-by-sex-and-age-group-2016-2022" id="toc-data-set-2-the-percentage-of-individuals-status-of-alcohol-use-by-sex-and-age-group-2016-2022" class="nav-link" data-scroll-target="#data-set-2-the-percentage-of-individuals-status-of-alcohol-use-by-sex-and-age-group-2016-2022"><span class="header-section-number">3.2</span> Data Set 2 : The Percentage of Individuals’ Status of Alcohol Use by Sex and Age Group, 2016-2022</a></li>
-  <li><a href="#data-set-3-body-mass-index-distribution-of-individuals-by-sex-2008-2022" id="toc-data-set-3-body-mass-index-distribution-of-individuals-by-sex-2008-2022" class="nav-link" data-scroll-target="#data-set-3-body-mass-index-distribution-of-individuals-by-sex-2008-2022"><span class="header-section-number">3.3</span> Data Set 3 : Body mass index distribution of individuals by sex, 2008-2022</a></li>
+  <li><a href="#data-set-3-body-mass-index-distribution-of-individuals-by-sex-2008-2022" id="toc-data-set-3-body-mass-index-distribution-of-individuals-by-sex-2008-2022" class="nav-link" data-scroll-target="#data-set-3-body-mass-index-distribution-of-individuals-by-sex-2008-2022"><span class="header-section-number">3.3</span> Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -314,21 +314,112 @@ Note
 <h3 data-toc-text="Dataset 1" data-number="3.1" class="anchored" data-anchor-id="dataset-1-the-percentage-of-main-diseaseshealth-problems-declared-by-individuals-in-the-last-12-months-by-sex-2016-2022"><span class="header-section-number">3.1</span> Dataset 1 : The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022</h3>
 <p>This data set showcases the percentage of health problems by sex. Only people over the age of 15 were considered for the study, and Alzheimer was evaluated for individuals in the 65+ age group.</p>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 102 × 4
-   Diseases  Gender  Year Percentage
-   &lt;chr&gt;     &lt;chr&gt;  &lt;dbl&gt;      &lt;dbl&gt;
- 1 Allergy   men     2016       7.54
- 2 Allergy   men     2019       8.93
- 3 Allergy   men     2022       6.57
- 4 Allergy   women   2016      13.9 
- 5 Allergy   women   2019      15.6 
- 6 Allergy   women   2022      12.5 
- 7 Alzheimer men     2016       5.10
- 8 Alzheimer men     2019       5.96
- 9 Alzheimer men     2022       5.07
-10 Alzheimer women   2016       6.07
-# ℹ 92 more rows</code></pre>
+<div class="cell-output-display">
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<caption>The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;" data-quarto-table-cell-role="th">Diseases</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Gender</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Year</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Allergy</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2016</td>
+<td style="text-align: center;">7.540591</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Allergy</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">8.926597</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Allergy</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">6.566730</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Allergy</td>
+<td style="text-align: center;">women</td>
+<td style="text-align: center;">2016</td>
+<td style="text-align: center;">13.900246</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Allergy</td>
+<td style="text-align: center;">women</td>
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">15.621691</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Allergy</td>
+<td style="text-align: center;">women</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">12.518126</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Alzheimer</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2016</td>
+<td style="text-align: center;">5.095686</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Alzheimer</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">5.955258</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Alzheimer</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">5.069767</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Alzheimer</td>
+<td style="text-align: center;">women</td>
+<td style="text-align: center;">2016</td>
+<td style="text-align: center;">6.065594</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Alzheimer</td>
+<td style="text-align: center;">women</td>
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">6.008264</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Alzheimer</td>
+<td style="text-align: center;">women</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">5.824677</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Arthrosis</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2016</td>
+<td style="text-align: center;">4.858361</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Arthrosis</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">7.636946</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Arthrosis</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">4.863095</td>
+</tr>
+</tbody>
+</table>
+
+
 </div>
 </div>
 <div style="text-align: justify">
@@ -361,21 +452,128 @@ Note
 <p>The second column, titled <em>usage</em>, has three different field values: *Consumers: Indicates the individual partakes in regular alcohol consumption. *Doesn’t consume: Means the individual has consumed alcohol before, but not anymore/not regularly. *Never consume: Indicates the individual has never consumed alcohol before.</p>
 </div>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 126 × 5
-   age   usage           gender  year  rate
-   &lt;chr&gt; &lt;chr&gt;           &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt;
- 1 15-24 Consumers       men     2016 13.1 
- 2 15-24 Consumers       men     2019 16.4 
- 3 15-24 Consumers       men     2022 11.6 
- 4 15-24 Consumers       women   2016  5.41
- 5 15-24 Consumers       women   2019  6.25
- 6 15-24 Consumers       women   2022  4.93
- 7 15-24 Doesn't consume men     2016  5.92
- 8 15-24 Doesn't consume men     2019  5.74
- 9 15-24 Doesn't consume men     2022  2.34
-10 15-24 Doesn't consume women   2016  3.95
-# ℹ 116 more rows</code></pre>
+<div class="cell-output-display">
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<caption>The Percentage of Individuals' Status of Alcohol Use by Sex and Age Group</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;" data-quarto-table-cell-role="th">Age</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">User Type</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Gender</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Year</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Consumers</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2016</td>
+<td style="text-align: center;">13.0800576</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Consumers</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">16.3688405</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Consumers</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">11.5901638</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Consumers</td>
+<td style="text-align: center;">women</td>
+<td style="text-align: center;">2016</td>
+<td style="text-align: center;">5.4064093</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Consumers</td>
+<td style="text-align: center;">women</td>
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">6.2480878</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Consumers</td>
+<td style="text-align: center;">women</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">4.9318588</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Doesn't consume</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2016</td>
+<td style="text-align: center;">5.9217499</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Doesn't consume</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">5.7362602</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Doesn't consume</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">2.3365367</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Doesn't consume</td>
+<td style="text-align: center;">women</td>
+<td style="text-align: center;">2016</td>
+<td style="text-align: center;">3.9478235</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Doesn't consume</td>
+<td style="text-align: center;">women</td>
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">3.0067650</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Doesn't consume</td>
+<td style="text-align: center;">women</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">0.8584534</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Never consume</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2016</td>
+<td style="text-align: center;">80.9981924</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Never consume</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">77.8948993</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">15-24</td>
+<td style="text-align: center;">Never consume</td>
+<td style="text-align: center;">men</td>
+<td style="text-align: center;">2022</td>
+<td style="text-align: center;">86.0732995</td>
+</tr>
+</tbody>
+</table>
+
+
 </div>
 </div>
 <p>The third column shows the gender of the individuals that took part in the study, followed by the year on column 4 and the percentages on column 5.</p>
@@ -388,26 +586,117 @@ Note
 </div>
 </section>
 <section id="data-set-3-body-mass-index-distribution-of-individuals-by-sex-2008-2022" class="level3" data-toc-text="Dataset 3" data-number="3.3">
-<h3 data-toc-text="Dataset 3" data-number="3.3" class="anchored" data-anchor-id="data-set-3-body-mass-index-distribution-of-individuals-by-sex-2008-2022"><span class="header-section-number">3.3</span> Data Set 3 : Body mass index distribution of individuals by sex, 2008-2022</h3>
+<h3 data-toc-text="Dataset 3" data-number="3.3" class="anchored" data-anchor-id="data-set-3-body-mass-index-distribution-of-individuals-by-sex-2008-2022"><span class="header-section-number">3.3</span> Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022</h3>
 <div style="text-align: justify">
 <p>This data set showcases the body mass index distribution of male and female individuals, as well as a total for the year of each sub-study. The data here was collected every two years starting from 2008, and ending at 2022.</p>
 </div>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 56 × 4
-    Year Sex    Category      Percentage
-   &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;              &lt;dbl&gt;
- 1  2008 Male   Underweight         2.7 
- 2  2008 Male   Normal_weight      48.1 
- 3  2008 Male   Pre_Obese          36.9 
- 4  2008 Male   Obese              12.3 
- 5  2008 Female Underweight         5.9 
- 6  2008 Female Normal_weight      48.2 
- 7  2008 Female Pre_Obese          27.4 
- 8  2008 Female Obese              18.5 
- 9  2010 Male   Underweight         3.46
-10  2010 Male   Normal_weight      46.1 
-# ℹ 46 more rows</code></pre>
+<div class="cell-output-display">
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<caption>Body Mass Index Distribution of Individuals by Sex</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;" data-quarto-table-cell-role="th">Year</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Sex</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Category</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">2008</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">Underweight</td>
+<td style="text-align: center;">2.70</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2008</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">Normal_weight</td>
+<td style="text-align: center;">48.10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2008</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">Pre_Obese</td>
+<td style="text-align: center;">36.90</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2008</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">Obese</td>
+<td style="text-align: center;">12.30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2008</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">Underweight</td>
+<td style="text-align: center;">5.90</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2008</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">Normal_weight</td>
+<td style="text-align: center;">48.20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2008</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">Pre_Obese</td>
+<td style="text-align: center;">27.40</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2008</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">Obese</td>
+<td style="text-align: center;">18.50</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2010</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">Underweight</td>
+<td style="text-align: center;">3.46</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2010</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">Normal_weight</td>
+<td style="text-align: center;">46.12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2010</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">Pre_Obese</td>
+<td style="text-align: center;">37.26</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2010</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">Obese</td>
+<td style="text-align: center;">13.16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2010</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">Underweight</td>
+<td style="text-align: center;">5.93</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2010</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">Normal_weight</td>
+<td style="text-align: center;">44.73</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2010</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">Pre_Obese</td>
+<td style="text-align: center;">28.39</td>
+</tr>
+</tbody>
+</table>
+
+
 </div>
 </div>
 <p>The first column has year information. The second column indicates whether the individual is male or female. <em>Category</em> column has four field values:</p>
