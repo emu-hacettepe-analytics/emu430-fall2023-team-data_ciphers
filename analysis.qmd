@@ -16,3 +16,48 @@ format:
 Stay tuned for the updates.
 
 ![](giphy1.gif){width="310"}
+
+```{r}
+library(ggplot2)
+ggplot(data_3_longer, aes(x = Year, y = Percentage, fill = Category)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Percentage of Categories Over Years",
+       x = "Year",
+       y = "Percentage") +
+  theme_minimal()
+
+
+```
+```{r}
+library(ggplot2)
+ggplot(data_3_longer, aes(x = Year, y = Percentage, color = Category)) +
+  geom_line() +
+  labs(title = "Percentage Trends Over Years",
+       x = "Year",
+       y = "Percentage") +
+  theme_minimal()
+```
+
+
+```{r}
+library(ggplot2)
+ggplot(data_3_longer, aes(x = Year, y = Percentage, fill = Category)) +
+  geom_area() +
+  labs(title = "Composition of Categories Over Years",
+       x = "Year",
+       y = "Percentage") +
+  theme_minimal()
+```
+
+
+```{r}
+library(ggplot2)
+ggplot(data_3_longer, aes(x = Sex, y = Percentage, fill = Category)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Percentage of Categories by Gender",
+       x = "Gender",
+       y = "Percentage") +
+  theme_minimal()
+
+```
+
