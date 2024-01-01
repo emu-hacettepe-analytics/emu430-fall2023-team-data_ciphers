@@ -25,7 +25,7 @@
     "href": "analysis.html",
     "title": "Analysis",
     "section": "",
-    "text": "Stay tuned for the updates.\n\n\n\n\n Back to top"
+    "text": "Show the code\nggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +\n  geom_bar(stat = \"identity\", position = \"dodge\") +\n  labs(title = \"Percentage of Categories Over Years\",\n       x = \"Year\",\n       y = \"Percentage\") +\n  theme_minimal()\n\n\n\n\n\n\n\nShow the code\nggplot(data_3_long, aes(x = Year, y = Percentage, color = Category)) +\n  geom_line() +\n  labs(title = \"Percentage Trends Over Years\",\n       x = \"Year\",\n       y = \"Percentage\") +\n  theme_minimal()\n\n\n\n\n\n\n\nShow the code\nggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +\n  geom_area() +\n  labs(title = \"Composition of Categories Over Years\",\n       x = \"Year\",\n       y = \"Percentage\") +\n  theme_minimal()\n\n\n\n\n\n\n\nShow the code\nggplot(data_3_long, aes(x = Sex, y = Percentage, fill = Category)) +\n  geom_bar(stat = \"identity\", position = \"dodge\") +\n  labs(title = \"Percentage of Categories by Gender\",\n       x = \"Gender\",\n       y = \"Percentage\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "data.html",

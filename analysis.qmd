@@ -13,11 +13,8 @@ format:
     number-sections: true
 ---
 
-Stay tuned for the updates.
-
-![](giphy1.gif){width="310"}
-
 ```{r}
+#| echo: false
 suppressPackageStartupMessages(library(dplyr))
 library(readxl)
 library(dplyr)
@@ -29,28 +26,22 @@ data_3_long <- data_3 %>%
   pivot_longer(cols = c(Underweight, Normal_weight, Pre_Obese, Obese),
                names_to = "Category",
                values_to = "Percentage")
+```
+
+```{r}
+#| code-fold: true
+#| code-summary: "Show the code"
 ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
   geom_bar(stat = "identity", position = "dodge") +
   labs(title = "Percentage of Categories Over Years",
        x = "Year",
        y = "Percentage") +
   theme_minimal()
-
-
 ```
 
 ```{r}
-library(ggplot2)
-suppressPackageStartupMessages(library(dplyr))
-library(readxl)
-library(dplyr)
-library(tidyr)
-data_3 <- read_excel("tidydataset3.xls")
-colnames(data_3) <- c("Year", "Sex", "Underweight", "Normal_weight", "Pre_Obese", "Obese")
-data_3_long <- data_3 %>%
-  pivot_longer(cols = c(Underweight, Normal_weight, Pre_Obese, Obese),
-               names_to = "Category",
-               values_to = "Percentage")
+#| code-fold: true
+#| code-summary: "Show the code"
 ggplot(data_3_long, aes(x = Year, y = Percentage, color = Category)) +
   geom_line() +
   labs(title = "Percentage Trends Over Years",
@@ -60,17 +51,8 @@ ggplot(data_3_long, aes(x = Year, y = Percentage, color = Category)) +
 ```
 
 ```{r}
-library(ggplot2)
-suppressPackageStartupMessages(library(dplyr))
-library(readxl)
-library(dplyr)
-library(tidyr)
-data_3 <- read_excel("tidydataset3.xls")
-colnames(data_3) <- c("Year", "Sex", "Underweight", "Normal_weight", "Pre_Obese", "Obese")
-data_3_long <- data_3 %>%
-  pivot_longer(cols = c(Underweight, Normal_weight, Pre_Obese, Obese),
-               names_to = "Category",
-               values_to = "Percentage")
+#| code-fold: true
+#| code-summary: "Show the code"
 ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
   geom_area() +
   labs(title = "Composition of Categories Over Years",
@@ -80,22 +62,12 @@ ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
 ```
 
 ```{r}
-library(ggplot2)
-suppressPackageStartupMessages(library(dplyr))
-library(readxl)
-library(dplyr)
-library(tidyr)
-data_3 <- read_excel("tidydataset3.xls")
-colnames(data_3) <- c("Year", "Sex", "Underweight", "Normal_weight", "Pre_Obese", "Obese")
-data_3_long <- data_3 %>%
-  pivot_longer(cols = c(Underweight, Normal_weight, Pre_Obese, Obese),
-               names_to = "Category",
-               values_to = "Percentage")
+#| code-fold: true
+#| code-summary: "Show the code"
 ggplot(data_3_long, aes(x = Sex, y = Percentage, fill = Category)) +
   geom_bar(stat = "identity", position = "dodge") +
   labs(title = "Percentage of Categories by Gender",
        x = "Gender",
        y = "Percentage") +
   theme_minimal()
-
 ```
