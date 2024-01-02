@@ -13,37 +13,23 @@ format:
     number-sections: true
 ---
 
+
 # Full Analysis
 
 ## Data Set 1
 
-```{r}
-#| echo: false
-suppressPackageStartupMessages(library(dplyr))
-library(readxl)
-library(dplyr)
-library(tidyr)
-library(ggplot2)
 
-data_1 <- read_excel("tidydataset1.xls")
-colnames(data_1) <- c("Diseases", "men_2016", "women_2016", "men_2019", "women_2019", "men_2022", "women_2022")
+::: {.cell}
 
-data_1_longer <- data_1 %>%
-  pivot_longer(cols = starts_with(c("men", "women")),
-               names_to = "Gender",
-               values_to = "Percentage") %>%
-  separate(Gender, into = c("Gender", "Year"), sep = "_") %>%
-  arrange(Diseases) %>%
-  mutate_at(vars(Year, Percentage), as.numeric) %>%
-  mutate(Diseases = gsub("^\\n", "", Diseases))
-```
+:::
+
 
 ### Average Percentage by Disease with Gender Connection {toc-text="Plot 1"}
 
-```{r}
-#| code-fold: true
-#| code-summary: "Show the code"
 
+::: {.cell}
+
+```{.r .cell-code  code-fold="true" code-summary="Show the code"}
 abbreviate_disease_names <- abbreviate(data_1_longer$Diseases)
 ggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = Gender)) +
   geom_bar(stat = "summary", fun = "mean", position = "dodge", width = 0.7) +
@@ -57,12 +43,18 @@ ggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = Gender)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
+::: {.cell-output-display}
+![](analysis_files/figure-html/unnamed-chunk-2-1.png){width=672}
+:::
+:::
+
+
 ### Percentage by Disease with Year Connection {toc-text="Plot 2"}
 
-```{r}
-#| code-fold: true
-#| code-summary: "Show the code"
 
+::: {.cell}
+
+```{.r .cell-code  code-fold="true" code-summary="Show the code"}
 abbreviate_disease_names <- abbreviate(data_1_longer$Diseases)
 
 custom_colors <- c("#66c2a5", "#fc8d62", "#8da0cb")
@@ -78,32 +70,28 @@ ggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = as.factor(Year)))
   scale_fill_manual(values = custom_colors) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
-
 ```
+
+::: {.cell-output-display}
+![](analysis_files/figure-html/unnamed-chunk-3-1.png){width=672}
+:::
+:::
+
 
 ## Data Set 3
 
-```{r}
-#| echo: false
-suppressPackageStartupMessages(library(dplyr))
-library(readxl)
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-data_3 <- read_excel("tidydataset3.xls")
-colnames(data_3) <- c("Year", "Sex", "Underweight", "Normal_weight", "Pre_Obese", "Obese")
-data_3_long <- data_3 %>%
-  pivot_longer(cols = c(Underweight, Normal_weight, Pre_Obese, Obese),
-               names_to = "Category",
-               values_to = "Percentage")
-```
+
+::: {.cell}
+
+:::
+
 
 ### Percentage of Categories Over Years {toc-text="Plot 1"}
 
-```{r}
-#| code-fold: true
-#| code-summary: "Show the code"
+
+::: {.cell}
+
+```{.r .cell-code  code-fold="true" code-summary="Show the code"}
 ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
   geom_bar(stat = "identity", position = "dodge") +
   labs(title = "Percentage of Categories Over Years",
@@ -112,11 +100,18 @@ ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
   theme_minimal()
 ```
 
+::: {.cell-output-display}
+![](analysis_files/figure-html/unnamed-chunk-5-1.png){width=672}
+:::
+:::
+
+
 ### Percentage Trends Over Years {toc-text="Plot 2"}
 
-```{r}
-#| code-fold: true
-#| code-summary: "Show the code"
+
+::: {.cell}
+
+```{.r .cell-code  code-fold="true" code-summary="Show the code"}
 ggplot(data_3_long, aes(x = Year, y = Percentage, color = Category)) +
   geom_line() +
   labs(title = "Percentage Trends Over Years",
@@ -125,11 +120,18 @@ ggplot(data_3_long, aes(x = Year, y = Percentage, color = Category)) +
   theme_minimal()
 ```
 
+::: {.cell-output-display}
+![](analysis_files/figure-html/unnamed-chunk-6-1.png){width=672}
+:::
+:::
+
+
 ### Composition of Categories Over Years {toc-text="Plot 3"}
 
-```{r}
-#| code-fold: true
-#| code-summary: "Show the code"
+
+::: {.cell}
+
+```{.r .cell-code  code-fold="true" code-summary="Show the code"}
 ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
   geom_area() +
   labs(title = "Composition of Categories Over Years",
@@ -138,11 +140,18 @@ ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
   theme_minimal()
 ```
 
+::: {.cell-output-display}
+![](analysis_files/figure-html/unnamed-chunk-7-1.png){width=672}
+:::
+:::
+
+
 ### Percentage of Categories by Gender {toc-text="Plot 4"}
 
-```{r}
-#| code-fold: true
-#| code-summary: "Show the code"
+
+::: {.cell}
+
+```{.r .cell-code  code-fold="true" code-summary="Show the code"}
 ggplot(data_3_long, aes(x = Sex, y = Percentage, fill = Category)) +
   geom_bar(stat = "identity", position = "dodge") +
   labs(title = "Percentage of Categories by Gender",
@@ -150,3 +159,9 @@ ggplot(data_3_long, aes(x = Sex, y = Percentage, fill = Category)) +
        y = "Percentage") +
   theme_minimal()
 ```
+
+::: {.cell-output-display}
+![](analysis_files/figure-html/unnamed-chunk-8-1.png){width=672}
+:::
+:::
+
