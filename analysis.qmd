@@ -13,6 +13,10 @@ format:
     number-sections: true
 ---
 
+# Full Analysis
+
+## Data Set 2
+
 ```{r}
 #| echo: false
 suppressPackageStartupMessages(library(dplyr))
@@ -28,6 +32,8 @@ data_3_long <- data_3 %>%
                values_to = "Percentage")
 ```
 
+### Percentage of Categories Over Years {toc-text="Plot 1"}
+
 ```{r}
 #| code-fold: true
 #| code-summary: "Show the code"
@@ -38,6 +44,8 @@ ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
        y = "Percentage") +
   theme_minimal()
 ```
+
+### Percentage Trends Over Years {toc-text="Plot 2"}
 
 ```{r}
 #| code-fold: true
@@ -50,6 +58,8 @@ ggplot(data_3_long, aes(x = Year, y = Percentage, color = Category)) +
   theme_minimal()
 ```
 
+### Composition of Categories Over Years {toc-text="Plot 3"}
+
 ```{r}
 #| code-fold: true
 #| code-summary: "Show the code"
@@ -60,6 +70,8 @@ ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
        y = "Percentage") +
   theme_minimal()
 ```
+
+### Percentage of Categories by Gender {toc-text="Plot 4"}
 
 ```{r}
 #| code-fold: true
