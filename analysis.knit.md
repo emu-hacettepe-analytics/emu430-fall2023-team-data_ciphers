@@ -16,7 +16,7 @@ format:
 
 # Full Analysis
 
-## Data Set 1
+### Dataset 1 : The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022 {toc-text="Dataset 1"}
 
 
 ::: {.cell}
@@ -78,7 +78,9 @@ ggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = as.factor(Year)))
 :::
 
 
-## Data Set 3
+## Data Set 2 : The Percentage of Individuals’ Status of Alcohol Use by Sex and Age Group, 2016-2022 {toc-text="Dataset 2"}
+
+## Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022 {toc-text="Dataset 3"}
 
 
 ::: {.cell}
