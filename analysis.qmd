@@ -135,6 +135,22 @@ ggplot(data_2_longer, aes(x = age, y = rate, fill = gender)) +
   theme_minimal()
 ```
 
+### Stripplot Showing Distribution of Alcohol Usage Rate by Age Group
+
+```{r}
+#| code-fold: true
+#| code-summary: "Show the code"
+ggplot(data_2_longer, aes(x = age, y = rate, color = gender)) +
+  geom_jitter(alpha = 0.7) +
+  labs(title = "Distribution of Alcohol Usage Rate by Age Group",
+       x = "Age Group",
+       y = "Rate") +
+  scale_color_manual(values = c("#99C2FF", "#FFB6C1")) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+
+  theme_minimal()
+
+```
+
 ## Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022 {toc-text="Dataset 3"}
 
 ```{r}
