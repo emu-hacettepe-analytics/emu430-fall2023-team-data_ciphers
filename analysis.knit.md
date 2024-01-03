@@ -14,8 +14,6 @@ format:
 ---
 
 
-# Full Analysis
-
 ## Dataset 1 : The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022 {toc-text="Dataset 1"}
 
 
@@ -78,6 +76,32 @@ ggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = as.factor(Year)))
 :::
 
 
+### Distribution of Percentage by Year {toc-text="Plot 3"}
+
+
+::: {.cell}
+
+```{.r .cell-code  code-fold="true" code-summary="Show the code"}
+abbreviate_disease_names <- abbreviate(data_1_longer$Diseases)
+
+ggplot(data_1_longer, aes(x = reorder(abbreviate_disease_names, -Percentage), y = Percentage, fill = Gender)) +
+  geom_boxplot(position = "dodge", alpha = 0.7) +
+  labs(title = "Distribution of Percentage by Gender for Each Disease",
+       x = "Abbreviated Diseases",
+       y = "Percentage",
+       fill = "Gender") +
+  scale_fill_manual(values = c("#66c2a5", "#fc8d62")) +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+::: {.cell-output-display}
+![](analysis_files/figure-html/unnamed-chunk-4-1.png){width=672}
+:::
+:::
+
+
 ## Data Set 2 : The Percentage of Individuals’ Status of Alcohol Use by Sex and Age Group, 2016-2022 {toc-text="Dataset 2"}
 
 ## Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022 {toc-text="Dataset 3"}
@@ -103,7 +127,7 @@ ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
 ```
 
 ::: {.cell-output-display}
-![](analysis_files/figure-html/unnamed-chunk-5-1.png){width=672}
+![](analysis_files/figure-html/unnamed-chunk-6-1.png){width=672}
 :::
 :::
 
@@ -123,7 +147,7 @@ ggplot(data_3_long, aes(x = Year, y = Percentage, color = Category)) +
 ```
 
 ::: {.cell-output-display}
-![](analysis_files/figure-html/unnamed-chunk-6-1.png){width=672}
+![](analysis_files/figure-html/unnamed-chunk-7-1.png){width=672}
 :::
 :::
 
@@ -143,7 +167,7 @@ ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
 ```
 
 ::: {.cell-output-display}
-![](analysis_files/figure-html/unnamed-chunk-7-1.png){width=672}
+![](analysis_files/figure-html/unnamed-chunk-8-1.png){width=672}
 :::
 :::
 
@@ -163,7 +187,7 @@ ggplot(data_3_long, aes(x = Sex, y = Percentage, fill = Category)) +
 ```
 
 ::: {.cell-output-display}
-![](analysis_files/figure-html/unnamed-chunk-8-1.png){width=672}
+![](analysis_files/figure-html/unnamed-chunk-9-1.png){width=672}
 :::
 :::
 
