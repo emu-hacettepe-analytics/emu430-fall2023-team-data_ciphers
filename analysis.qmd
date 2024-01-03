@@ -121,7 +121,7 @@ data_2_longer <- data_2 %>%
   na.omit()
 ```
 
-### Alcohol Usage Rate Distribution by Age Group
+### Alcohol Usage Rate Distribution by Age Group {toc-text="Plot 1"}
 
 ```{r}
 #| code-fold: true
@@ -135,7 +135,7 @@ ggplot(data_2_longer, aes(x = age, y = rate, fill = gender)) +
   theme_minimal()
 ```
 
-### Stripplot Showing Distribution of Alcohol Usage Rate by Age Group
+### Strip Plot Showing Distribution of Alcohol Usage Rate by Age Group {toc-text="Plot 2"}
 
 ```{r}
 #| code-fold: true
@@ -151,7 +151,7 @@ ggplot(data_2_longer, aes(x = age, y = rate, color = gender)) +
 
 ```
 
-### Distribution of Alcohol Usage Rates in Age Groups
+### Distribution of Alcohol Usage Rates in Age Groups {toc-text="Plot 3"}
 
 ```{r}
 #| code-fold: true
@@ -164,15 +164,15 @@ ggplot(data_2_longer, aes(x = rate, fill = age)) +
   theme_minimal()
 ```
 
-### Relationship Between Usage, Age Groups, and Years (Total)
+### Usage Across Years by Gender {toc-text="Plot 4"}
 
 ```{r}
 #| code-fold: true
 #| code-summary: "Show the code"
-ggplot(data_2_longer, aes(x = year, y = rate, color = usage)) +
-  geom_line(aes(group = usage), size = 1.5) +
-  facet_grid(age ~ .) +
-  labs(title = "Relationship between Usage, Age Groups, and Years (Total)",
+ggplot(data_2_longer, aes(x = year, y = rate, fill = usage)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  facet_grid(. ~ gender) +
+  labs(title = "Usage Across Years by Gender",
        x = "Year",
        y = "Rate") +
   theme_minimal()
