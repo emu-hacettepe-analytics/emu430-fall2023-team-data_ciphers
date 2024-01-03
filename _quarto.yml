@@ -29,9 +29,7 @@ format:
   html:
     toc: true
     toc-location: left
-    theme: 
-      light: flatly 
-      dark: flatly
+    theme: flatly
     css: styles.css
 
 

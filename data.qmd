@@ -1,5 +1,7 @@
 ---
 title: "Data"
+styles:
+  styles.css
 format:
   html:
     toc: true
@@ -68,7 +70,7 @@ data_1_longer <- data_1 %>%
   mutate(Diseases = gsub("^\\n", "", Diseases))
 ```
 
-[Click here to download the associated .RData file for Dataset 1.](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/tidy_dataset_1.RData)
+[Click here to download the associated .RData file for Dataset 1.](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/tidy_dataset_1.RData){.download-button}
 
 ### **Percentage of Status of Alcohol Use by Sex and Age Group, 2016-2022** {toc-text="Dataset 2"}
 
@@ -92,7 +94,7 @@ data_2_longer <- data_2 %>%
   na.omit()
 ```
 
-[Click here to download the associated .RData file for Dataset 2.](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/tidy_dataset_2.RData)
+[Click here to download the associated .RData file for Dataset 2.](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/raw/master/tidy_dataset_2.RData){.download-button}
 
 ### **Body Mass Index Distribution of Individuals by Sex, 2008-2022** {toc-text="Dataset 3"}
 
@@ -117,7 +119,7 @@ data_3_long <- data_3 %>%
   select(-sex_group)
 ```
 
-[Click here to download the associated .RData file for Dataset 3.](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/blob/master/tidy_dataset_3.RData)
+[Click here to download the associated .RData file for Dataset 3.](https://github.com/emu-hacettepe-analytics/emu430-fall2023-team-data_ciphers/blob/master/tidy_dataset_3.RData){.download-button}
 
 ::: callout-note
 In the data pre-processing phase, we used ChatGPT to provide necessary functions and increase the quality of our content. Some of the functions are: "*mutate_at*", "*na.omit*", "*gsub*".

@@ -80,7 +80,7 @@ ggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = as.factor(Year)))
 
 ```
 
-### Distribution of Percentage by Year {toc-text="Plot 3"}
+### Distribution of Percentage by Gender for Each Disease {toc-text="Plot 3"}
 
 ```{r}
 #| code-fold: true
