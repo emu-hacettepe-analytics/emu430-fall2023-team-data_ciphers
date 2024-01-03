@@ -145,7 +145,7 @@ ggplot(data_2_longer, aes(x = age, y = rate, color = gender)) +
   labs(title = "Distribution of Alcohol Usage Rate by Age Group",
        x = "Age Group",
        y = "Rate") +
-  scale_color_manual(values = c("blue", "red")) +
+  scale_color_manual(values = c("#66c2a5", "#fc8d62")) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   theme_minimal()
 
@@ -169,7 +169,7 @@ ggplot(data_2_longer, aes(x = rate, fill = age)) +
 ```{r}
 #| code-fold: true
 #| code-summary: "Show the code"
-custom_colors <- c("#66c2a5", "#fc8d62", "#8da0cb")
+custom_colors <- c("#fc8d62", "#8da0cb","#66c2a5")
 ggplot(data_2_longer, aes(x = year, y = rate, fill = usage)) +
   geom_bar(stat = "identity", position = "dodge") +
   facet_grid(. ~ gender) +
