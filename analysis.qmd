@@ -99,7 +99,41 @@ ggplot(data_1_longer, aes(x = reorder(abbreviate_disease_names, -Percentage), y 
         axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-## Data Set 2 : The Percentage of Individuals’ Status of Alcohol Use by Sex and Age Group, 2016-2022 {toc-text="Dataset 2"}
+## Data Set 2 : The Percentage of Individuals' Status of Alcohol Use by Sex and Age Group, 2016-2022 {toc-text="Dataset 2"}
+
+```{r}
+#| echo: false
+suppressPackageStartupMessages(library(dplyr))
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+data_2 <- read_excel("tidydataset2.xls")
+colnames(data_2) <- c("age", "men_2016", "women_2016", "men_2019", "women_2019", "men_2022", "women_2022", "usage")
+data_2_longer <- data_2 %>%
+  pivot_longer(cols = starts_with(c("men", "women")),
+               names_to = "gender",
+               values_to = "rate") %>%
+  separate(gender, into = c("gender", "year"), sep = "_") %>%
+  arrange(age) %>%
+  mutate_at(vars(year, rate), as.numeric) %>%
+  na.omit()
+```
+
+### Alcohol Usage Rate Distribution by Age Group
+
+```{r}
+#| code-fold: true
+#| code-summary: "Show the code"
+ggplot(data_2_longer, aes(x = age, y = rate, fill = gender)) +
+  geom_boxplot() +
+  labs(title = "Distribution of Alcohol Usage Rate by Age Group",
+       x = "Age Group",
+       y = "Rate") +
+  scale_fill_manual(values = c("#99C2FF", "#FFB6C1")) +
+  theme_minimal()
+```
 
 ## Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022 {toc-text="Dataset 3"}
 

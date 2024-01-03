@@ -39,7 +39,7 @@
     "href": "analysis.html#data-set-2-the-percentage-of-individuals-status-of-alcohol-use-by-sex-and-age-group-2016-2022",
     "title": "Analysis",
     "section": "2 Data Set 2 : The Percentage of Individuals’ Status of Alcohol Use by Sex and Age Group, 2016-2022",
-    "text": "2 Data Set 2 : The Percentage of Individuals’ Status of Alcohol Use by Sex and Age Group, 2016-2022"
+    "text": "2 Data Set 2 : The Percentage of Individuals’ Status of Alcohol Use by Sex and Age Group, 2016-2022\n\n2.1 Alcohol Usage Rate Distribution by Age Group\n\n\nShow the code\nggplot(data_2_longer, aes(x = age, y = rate, fill = gender)) +\n  geom_boxplot() +\n  labs(title = \"Distribution of Alcohol Usage Rate by Age Group\",\n       x = \"Age Group\",\n       y = \"Rate\") +\n  scale_fill_manual(values = c(\"#99C2FF\", \"#FFB6C1\")) +\n  theme_minimal()"
   },
   {
     "objectID": "analysis.html#data-set-3-body-mass-index-distribution-of-individuals-by-sex-2008-2022",
