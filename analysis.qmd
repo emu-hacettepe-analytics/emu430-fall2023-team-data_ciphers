@@ -15,13 +15,14 @@ format:
 
 ## Dataset 1 : The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022 {toc-text="Dataset 1"}
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 #| echo: false
 suppressPackageStartupMessages(library(dplyr))
 library(readxl)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
+library(plotly)
 
 data_1 <- read_excel("tidydataset1.xls")
 colnames(data_1) <- c("Diseases", "men_2016", "women_2016", "men_2019", "women_2019", "men_2022", "women_2022")
@@ -38,21 +39,27 @@ data_1_longer <- data_1 %>%
 
 ### Average Percentage by Disease with Gender Connection {toc-text="Plot 1"}
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 #| code-fold: true
 #| code-summary: "Show the code"
 
-abbreviate_disease_names <- abbreviate(data_1_longer$Diseases)
-ggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = Gender)) +
-  geom_bar(stat = "summary", fun = "mean", position = "dodge", width = 0.7) +
-  labs(title = "Average Percentage by Disease with Gender Connection",
-       x = "Diseases",
-       y = "Percentage") +
-  scale_x_discrete(labels = abbreviate_disease_names) +
-  scale_y_continuous(breaks = seq(0, 30, by = 5)) +
-  scale_fill_manual(values = c("#99C2FF", "#FFB6C1")) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+summary_data <- data_1_longer %>%
+  group_by(Diseases, Gender) %>%
+  summarise(mean_percentage = mean(Percentage))
+abbreviate_disease_names <- abbreviate(summary_data$Diseases)
+plot <- plot_ly(summary_data, 
+                x = ~abbreviate_disease_names, 
+                y = ~mean_percentage, 
+                color = ~Gender,
+                colors = c("#1E7DFF", "#FC90FF"),
+                type = "bar") %>%
+  layout(title = list(text="Average Percentage by Disease with Gender Connection", x = 0, y = 1),
+         xaxis = list(title = "Diseases",
+                      zeroline = FALSE),
+         yaxis = list(title = "Percentage",
+                      zeroline = FALSE))
+  
+plot
 ```
 
 ### Percentage by Disease with Year Connection {toc-text="Plot 2"}
@@ -82,21 +89,23 @@ ggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = as.factor(Year)))
 
 ### Distribution of Percentage by Gender for Each Disease {toc-text="Plot 3"}
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 #| code-fold: true
 #| code-summary: "Show the code"
-abbreviate_disease_names <- abbreviate(data_1_longer$Diseases)
-
-ggplot(data_1_longer, aes(x = reorder(abbreviate_disease_names, -Percentage), y = Percentage, fill = Gender)) +
-  geom_boxplot(position = "dodge", alpha = 0.7) +
-  labs(title = "Distribution of Percentage by Gender for Each Disease",
-       x = "Abbreviated Diseases",
-       y = "Percentage",
-       fill = "Gender") +
-  scale_fill_manual(values = c("#66c2a5", "#fc8d62")) +
-  theme_minimal() +
-  theme(plot.title = element_text(hjust = 0.5),
-        axis.text.x = element_text(angle = 45, hjust = 1))
+aabbreviate_disease_names <- abbreviate(data_1_longer$Diseases)
+p6 <- plot_ly(data_1_longer,
+              x = ~reorder(abbreviate_disease_names, -Percentage),
+              y = ~Percentage,
+              color = ~Gender,
+              colors = c("#1E7DFF", "#FC90FF"),
+              type = "box") %>% 
+  layout(boxmode = "group",
+         title = "Distribution of Percentage by Gender for Each Disease",
+         xaxis = list(title = "Diseases",
+                      zeroline = FALSE),
+         yaxis = list(title = "Percentage",
+                      zeroline = FALSE))
+p6
 ```
 
 ## Data Set 2 : The Percentage of Individuals' Status of Alcohol Use by Sex and Age Group, 2016-2022 {toc-text="Dataset 2"}
@@ -204,8 +213,6 @@ data_3_long <- data_3 %>%
 ```{r}
 #| code-fold: true
 #| code-summary: "Show the code"
-#| code-fold: true
-#| code-summary: "Show the code"
 suppressPackageStartupMessages(library(dplyr))
 library(readxl)
 library(dplyr)
@@ -229,8 +236,6 @@ ggplot(data_3_long[data_3_long$Year >= 2008 & data_3_long$Year <= 2022, ],
   scale_x_discrete(labels = as.character(desired_years)) +
   theme_minimal()
 ```
-```
-``
 
 ### Composition of Categories Over Years {toc-text="Plot 3"}
 
@@ -258,7 +263,7 @@ ggplot(data_3_long, aes(x = Sex, y = Percentage, fill = Category)) +
   theme_minimal()
 ```
 
-#Percentage of Categories (2008-2022)
+### Percentage of Categories (2008-2022)
 
 ```{r}
 #| code-fold: true
@@ -289,5 +294,3 @@ ggplot(data_3_long[data_3_long$Year >= 2008 & data_3_long$Year <= 2022, ],
 
 
 ```
-
-\`\`\`
