@@ -17,7 +17,6 @@ format:
 
 ```{r message=FALSE, warning=FALSE}
 #| echo: false
-suppressPackageStartupMessages(library(dplyr))
 library(readxl)
 library(dplyr)
 library(tidyr)
@@ -83,8 +82,6 @@ ggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = as.factor(Year)))
   scale_fill_manual(values = custom_colors) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
-
 ```
 
 ### Distribution of Percentage by Gender for Each Disease {toc-text="Plot 3"}
@@ -110,9 +107,8 @@ p6
 
 ## Data Set 2 : The Percentage of Individuals' Status of Alcohol Use by Sex and Age Group, 2016-2022 {toc-text="Dataset 2"}
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 #| echo: false
-suppressPackageStartupMessages(library(dplyr))
 library(readxl)
 library(dplyr)
 library(tidyr)
@@ -132,7 +128,7 @@ data_2_longer <- data_2 %>%
 
 ### Distribution of Alcohol Usage Rate by Consume Status and Gender {toc-text="Plot 1"}
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 #| code-fold: true
 #| code-summary: "Show the code"
 ggplot(data_2_longer, aes(x = gender, y = rate, fill = gender)) +
@@ -149,7 +145,7 @@ ggplot(data_2_longer, aes(x = gender, y = rate, fill = gender)) +
 
 ### Distribution of Alcohol Usage Rate by Year {toc-text="Plot 2"}
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 #| code-fold: true
 #| code-summary: "Show the code"
 ggplot(data_2_longer, aes(x = year, y = rate, color = gender)) +
@@ -170,7 +166,7 @@ ggplot(data_2_longer, aes(x = year, y = rate, color = gender)) +
 
 ### Percentage of Consumers of Alcohol Use by Sex and Age Group {toc-text="Plot 3"}
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 #| code-fold: true
 #| code-summary: "Show the code"
 consumers_data <- data_2_longer %>%
@@ -187,30 +183,10 @@ ggplot(consumers_data, aes(x = year, y = age, fill = rate)) +
   theme_minimal()
 ```
 
-
 ## Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022 {toc-text="Dataset 3"}
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 #| echo: false
-suppressPackageStartupMessages(library(dplyr))
-library(readxl)
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-data_3 <- read_excel("tidydataset3.xls")
-colnames(data_3) <- c("Year", "Sex", "Underweight", "Normal_weight", "Pre_Obese", "Obese")
-data_3_long <- data_3 %>%
-  pivot_longer(cols = c(Underweight, Normal_weight, Pre_Obese, Obese),
-               names_to = "Category",
-               values_to = "Percentage")
-```
-
-### Percentage of Categories Over Years {toc-text="Plot 1"}
-
-```{r}
-#| code-fold: true
-#| code-summary: "Show the code"
-suppressPackageStartupMessages(library(dplyr))
 library(readxl)
 library(dplyr)
 library(tidyr)
@@ -223,6 +199,13 @@ data_3_long <- data_3 %>%
                values_to = "Percentage")
 
 desired_years <- c(2008, 2010, 2012, 2014, 2016, 2019, 2022)
+```
+
+### Percentage of Categories Over Years {toc-text="Plot 1"}
+
+```{r message=FALSE, warning=FALSE}
+#| code-fold: true
+#| code-summary: "Show the code"
 
 ggplot(data_3_long[data_3_long$Year >= 2008 & data_3_long$Year <= 2022, ], 
        aes(x = factor(Year, levels = desired_years), y = Percentage, fill = Category)) +
@@ -234,9 +217,9 @@ ggplot(data_3_long[data_3_long$Year >= 2008 & data_3_long$Year <= 2022, ],
   theme_minimal()
 ```
 
-### Composition of Categories Over Years {toc-text="Plot 3"}
+### Composition of Categories Over Years {toc-text="Plot 2"}
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 #| code-fold: true
 #| code-summary: "Show the code"
 ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
@@ -247,9 +230,9 @@ ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
   theme_minimal()
 ```
 
-### Percentage of Categories by Gender {toc-text="Plot 4"}
+### Percentage of Categories by Gender {toc-text="Plot 3"}
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 #| code-fold: true
 #| code-summary: "Show the code"
 ggplot(data_3_long, aes(x = Sex, y = Percentage, fill = Category)) +
@@ -258,36 +241,4 @@ ggplot(data_3_long, aes(x = Sex, y = Percentage, fill = Category)) +
        x = "Gender",
        y = "Percentage") +
   theme_minimal()
-```
-
-### Percentage of Categories (2008-2022)
-
-```{r}
-#| code-fold: true
-#| code-summary: "Show the code"
-suppressPackageStartupMessages(library(dplyr))
-library(readxl)
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-data_3 <- read_excel("tidydataset3.xls")
-colnames(data_3) <- c("Year", "Sex", "Underweight", "Normal_weight", "Pre_Obese", "Obese")
-data_3_long <- data_3 %>%
-  pivot_longer(cols = c(Underweight, Normal_weight, Pre_Obese, Obese),
-               names_to = "Category",
-               values_to = "Percentage")
-
-desired_years <- c(2008, 2010, 2012, 2014, 2016, 2019, 2022)
-
-ggplot(data_3_long[data_3_long$Year >= 2008 & data_3_long$Year <= 2022, ], 
-       aes(x = factor(Year, levels = desired_years), y = Percentage, fill = Category)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Percentage of Categories (2008-2022)",
-       x = "Year",
-       y = "Percentage") +
-  scale_x_discrete(labels = as.character(desired_years)) +
-  theme_minimal()
-
-
-
 ```
