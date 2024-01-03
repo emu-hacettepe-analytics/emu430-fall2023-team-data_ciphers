@@ -154,7 +154,7 @@ ggplot(data_2_longer, aes(x = gender, y = rate, fill = gender)) +
 #| code-summary: "Show the code"
 ggplot(data_2_longer, aes(x = year, y = rate, color = gender)) +
   geom_point(alpha = 0.7) +
-  stat_summary(fun = "mean", geom = "line", size = 0.3, color = "black",
+  stat_summary(fun = "mean", geom = "line", linewidth = 0.3, color = "black",
                aes(group = interaction(usage, gender)), show.legend = TRUE) +
   labs(title = "Distribution of Alcohol Usage Rate by Year",
        x = "Year",
