@@ -176,7 +176,10 @@ ggplot(data_2_longer, aes(x = year, y = rate, fill = usage)) +
   labs(title = "Usage Across Years by Gender",
        x = "Year",
        y = "Rate") +
-  theme_minimal()
+  scale_y_continuous(breaks = seq(0, 35, by = 5)) +
+  scale_fill_manual(values = custom_colors) +
+  theme_minimal() 
+ 
 ```
 
 ## Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022 {toc-text="Dataset 3"}
