@@ -165,6 +165,20 @@ ggplot(data_2_longer, aes(x = rate, fill = age)) +
   theme_minimal()
 ```
 
+### Relationship Between Usage, Age Groups, and Years (Total)
+
+```{r}
+#| code-fold: true
+#| code-summary: "Show the code"
+ggplot(data_2_longer, aes(x = year, y = rate, color = usage)) +
+  geom_line(aes(group = usage), size = 1.5) +
+  facet_grid(age ~ .) +
+  labs(title = "Relationship between Usage, Age Groups, and Years (Total)",
+       x = "Year",
+       y = "Rate") +
+  theme_minimal()
+```
+
 ## Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022 {toc-text="Dataset 3"}
 
 ```{r}
