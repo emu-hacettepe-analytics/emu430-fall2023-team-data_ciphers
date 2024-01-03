@@ -204,26 +204,33 @@ data_3_long <- data_3 %>%
 ```{r}
 #| code-fold: true
 #| code-summary: "Show the code"
-ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Percentage of Categories Over Years",
-       x = "Year",
-       y = "Percentage") +
-  theme_minimal()
-```
-
-### Percentage Trends Over Years {toc-text="Plot 2"}
-
-```{r}
 #| code-fold: true
 #| code-summary: "Show the code"
-ggplot(data_3_long, aes(x = Year, y = Percentage, color = Category)) +
-  geom_line() +
-  labs(title = "Percentage Trends Over Years",
+suppressPackageStartupMessages(library(dplyr))
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+data_3 <- read_excel("tidydataset3.xls")
+colnames(data_3) <- c("Year", "Sex", "Underweight", "Normal_weight", "Pre_Obese", "Obese")
+data_3_long <- data_3 %>%
+  pivot_longer(cols = c(Underweight, Normal_weight, Pre_Obese, Obese),
+               names_to = "Category",
+               values_to = "Percentage")
+
+desired_years <- c(2008, 2010, 2012, 2014, 2016, 2019, 2022)
+
+ggplot(data_3_long[data_3_long$Year >= 2008 & data_3_long$Year <= 2022, ], 
+       aes(x = factor(Year, levels = desired_years), y = Percentage, fill = Category)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Percentage of Categories (2008-2022)",
        x = "Year",
        y = "Percentage") +
+  scale_x_discrete(labels = as.character(desired_years)) +
   theme_minimal()
 ```
+```
+``
 
 ### Composition of Categories Over Years {toc-text="Plot 3"}
 
@@ -250,7 +257,6 @@ ggplot(data_3_long, aes(x = Sex, y = Percentage, fill = Category)) +
        y = "Percentage") +
   theme_minimal()
 ```
-
 
 #Percentage of Categories (2008-2022)
 
@@ -284,3 +290,4 @@ ggplot(data_3_long[data_3_long$Year >= 2008 & data_3_long$Year <= 2022, ],
 
 ```
 
+\`\`\`
