@@ -161,7 +161,6 @@ ggplot(data_2_longer, aes(x = rate, fill = age)) +
   labs(title = "Distribution of Alcohol Usage Rates in Age Groups",
        x = "Rate",
        y = "Count") +
-  scale_fill_brewer(palette = "Set3") +
   theme_minimal()
 ```
 
