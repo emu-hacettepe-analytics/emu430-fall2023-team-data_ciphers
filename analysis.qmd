@@ -22,6 +22,18 @@ format:
 
 ![](giphy2.gif){fig-align="center" width="240"}
 
+::: {style="text-align: center"}
+::: {style="font-size: 36px;"}
+**Key Takeaways**
+:::
+:::
+
+::: {style="text-align: justify"}
+-   For our analysis, we have selected the Turkey Health Survey topic from the Turkey Statistical Institute. This survey is a research project with the aim of understanding the general state of health and the collection of data on key health indicators in order to be able to measure the development of the country. The Survey provides international comparisons and helps to identify national health needs.
+
+-   Our data set contains a wide range of health-related information in Turkey. This information includes health habits, health care use, prevalent diseases and demographic details. As a team, we analysed health patterns among different age and gender groups, identified variations in health behaviors and disease occurrence, and understood health service utilization. Providing valuable insights for health policies and activities is our ultimate goal.
+:::
+
 ## Dataset 1 : The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022 {toc-text="Dataset 1"}
 
 ```{r message=FALSE, warning=FALSE}
