@@ -15,7 +15,7 @@ format:
 ---
 
 ::: {style="text-align: center"}
-::: {style="font-family: fantasy; font-size: 50px; font-style: normal; font-variant: small-caps; font-weight: 700; line-height: 39.6px; color: #385170;"}
+::: {style="font-family: fantasy; font-size: 50px; font-style: normal; font-variant: small-caps; font-weight: 700; line-height: 39.6px; color: #333333;"}
 **Data**
 :::
 :::
