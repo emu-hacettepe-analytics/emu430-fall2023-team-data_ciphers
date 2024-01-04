@@ -98,19 +98,17 @@ One look at this plot and we can tell that women are more commonly reported to h
 
 abbreviate_disease_names <- abbreviate(data_1_longer$Diseases)
 
-custom_colors <- c("#66c2a5", "#fc8d62", "#8da0cb")
+chart_12 <- plot_ly(data_1_longer, 
+                x = ~abbreviate_disease_names, 
+                y = ~Percentage, 
+                color = ~as.factor(Year),
+                colors = c("#49CE53", "#2B59C3","#FA7E61"),
+                type = "bar") %>%
+  layout(title = list(text="Percentage by Disease with Year Connection", x = 0, y = 1),
+         xaxis = list(title = "Diseases"),
+         yaxis = list(title = "Percentage"))
 
-ggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = as.factor(Year))) +
-  geom_bar(stat = "identity", position = "dodge", width = 0.7) +
-  labs(title = "Percentage by Disease with Year Connection",
-       x = "Diseases",
-       y = "Percentage",
-       fill = "Year") +
-  scale_x_discrete(labels = abbreviate_disease_names) +
-  scale_y_continuous(breaks = seq(0, 35, by = 5)) +
-  scale_fill_manual(values = custom_colors) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+chart_12
 ```
 
 This graph tells us a few key things:
@@ -179,9 +177,7 @@ chart_21 <- plot_ly(data_2_longer,
          xaxis = list(title = "Alcohol Usage",
                       zeroline = FALSE),
          yaxis = list(title = "Percentage",
-                      zeroline = FALSE,
-                      type = "log",
-                      tickvals = c(1, 10, 100)))
+                      zeroline = FALSE))
 chart_21
 ```
 
