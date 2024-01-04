@@ -28,7 +28,7 @@ format:
 The Türkiye Health Survey wants to find out how healthy people are and collect important information about key health measures. It helps compare health internationally and gives insights into what health needs a country has for its development.
 :::
 
-**Data source:** [Türkiye Health Survey 2022](https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Saglik-Arastirmasi-2022-49747)
+**Data source:** [Türkiye Health Survey 2022](https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Saglik-Arastirmasi-2022-49747){.download-button}
 
 ### Why We Selected This Data
 

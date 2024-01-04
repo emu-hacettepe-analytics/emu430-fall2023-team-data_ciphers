@@ -137,7 +137,7 @@ data_2_longer <- data_2 %>%
   na.omit()
 ```
 
-### Distribution of Alcohol Usage Rate by Consume Status and Gender {toc-text="Plot 1"}
+### Distribution of Alcohol Usage Percentage by Consume Status and Gender {toc-text="Plot 1"}
 
 ```{r message=FALSE, warning=FALSE}
 #| code-fold: true
@@ -145,16 +145,16 @@ data_2_longer <- data_2 %>%
 ggplot(data_2_longer, aes(x = gender, y = rate, fill = gender)) +
   geom_boxplot() +
   facet_grid(. ~ usage) +
-  labs(title = "Distribution of Alcohol Usage Rate by Consume Status and Gender",
+  labs(title = "Distribution of Alcohol Usage Percentage by Consume Status and Gender",
        x = "Gender",
-       y = "Rate") +
+       y = "Percentage") +
   scale_fill_manual(values = c("women" = "#FC90FF", "men" = "#1E7DFF"), 
                     breaks = c("women", "men")) +
   scale_y_continuous(trans = "log10") + 
   theme_minimal()
 ```
 
-### Distribution of Alcohol Usage Rate by Year {toc-text="Plot 2"}
+### Distribution of Alcohol Usage Percentage by Year {toc-text="Plot 2"}
 
 ```{r message=FALSE, warning=FALSE}
 #| code-fold: true
@@ -163,9 +163,9 @@ ggplot(data_2_longer, aes(x = year, y = rate, color = gender)) +
   geom_point(alpha = 0.7) +
   stat_summary(fun = "mean", geom = "line", linewidth = 0.3, color = "black",
                aes(group = interaction(usage, gender)), show.legend = TRUE) +
-  labs(title = "Distribution of Alcohol Usage Rate by Year",
+  labs(title = "Distribution of Alcohol Usage Percentage by Year",
        x = "Year",
-       y = "Rate") +
+       y = "Percentage") +
   scale_color_manual(values = c("#66c2a5", "#fc8d62")) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   theme_minimal() +
@@ -189,7 +189,7 @@ ggplot(consumers_data, aes(x = year, y = age, fill = rate)) +
   labs(title = "Percentage of Consumers of Alcohol Use by Sex and Age Group",
        x = "Year",
        y = "Age Group",
-       fill = "Rate") +
+       fill = "Percentage") +
   scale_fill_gradient(low = "white", high = "#fc8d62") +
   theme_minimal()
 ```
@@ -241,15 +241,15 @@ ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
   theme_minimal()
 ```
 
-### Percentage of Categories by Gender {toc-text="Plot 3"}
+### Boxplot of Percentage by Category and Sex {toc-text="Plot 3"}
 
 ```{r message=FALSE, warning=FALSE}
 #| code-fold: true
 #| code-summary: "Show the code"
-ggplot(data_3_long, aes(x = Sex, y = Percentage, fill = Category)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Percentage of Categories by Gender",
-       x = "Gender",
+ggplot(data_3_long, aes(x = reorder(Category, -Percentage), y = Percentage, fill = Sex)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of Percentage by Category and Sex",
+       x = "Category",
        y = "Percentage") +
   theme_minimal()
 ```
