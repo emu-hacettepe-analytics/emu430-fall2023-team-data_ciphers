@@ -240,14 +240,17 @@ desired_years <- c(2008, 2010, 2012, 2014, 2016, 2019, 2022)
 #| code-fold: true
 #| code-summary: "Show the code"
 
-ggplot(data_3_long[data_3_long$Year >= 2008 & data_3_long$Year <= 2022, ], 
-       aes(x = factor(Year, levels = desired_years), y = Percentage, fill = Category)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Percentage of Categories (2008-2022)",
-       x = "Year",
-       y = "Percentage") +
-  scale_x_discrete(labels = as.character(desired_years)) +
-  theme_minimal()
+chart_31 <- plot_ly(data_3_long, 
+                x = ~Year, 
+                y = ~Percentage, 
+                color = ~Category,
+                colors = c("PuBu"),
+                type = "bar") %>%
+  layout(title = list(text="Percentage of Categories (2008-2022)", x = 0, y = 1),
+         xaxis = list(title = "Year"),
+         yaxis = list(title = "Percentage"))
+
+chart_31
 ```
 
 ### Composition of Categories Over Years {toc-text="Plot 2"}
@@ -268,10 +271,18 @@ ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
 ```{r message=FALSE, warning=FALSE}
 #| code-fold: true
 #| code-summary: "Show the code"
-ggplot(data_3_long, aes(x = reorder(Category, -Percentage), y = Percentage, fill = Sex)) +
-  geom_boxplot() +
-  labs(title = "Boxplot of Percentage by Category and Sex",
-       x = "Category",
-       y = "Percentage") +
-  theme_minimal()
+
+chart_33 <- plot_ly(data_3_long,
+              x = ~reorder(Category, -Percentage),
+              y = ~Percentage,
+              color = ~Sex,
+              colors = c("#1E7DFF", "#FC90FF","#8D87FF"),
+              type = "box") %>% 
+  layout(boxmode = "group",
+         title = list(text="Boxplot of Percentage by Category and Sex", x = 0, y = 1),
+         xaxis = list(title = "Category",
+                      zeroline = FALSE),
+         yaxis = list(title = "Percentage",
+                      zeroline = FALSE))
+chart_33
 ```
