@@ -163,10 +163,10 @@ chart_21 <- plot_ly(data_2_longer,
               colors = c("#1E7DFF", "#FC90FF"),
               type = "box") %>% 
   layout(boxmode = "group",
-         title = list(text="Distribution of Alcohol Usage Rate by Consume Status and Gender", x = 0, y = 1),
+         title = list(text="Distribution of Alcohol Usage Percentage by Consume Status and Gender", x = 0, y = 1),
          xaxis = list(title = "Alcohol Usage",
                       zeroline = FALSE),
-         yaxis = list(title = "Rate",
+         yaxis = list(title = "Percentage",
                       zeroline = FALSE,
                       type = "log",
                       tickvals = c(1, 10, 100)))
@@ -231,7 +231,7 @@ data_3_long <- data_3 %>%
                names_to = "Category",
                values_to = "Percentage")
 
-desired_years <- c(2008, 2010, 2012, 2014, 2016, 2019, 2022)
+years <- c(2008, 2010, 2012, 2014, 2016, 2019, 2022)
 ```
 
 ### Percentage of Categories Over Years {toc-text="Plot 1"}
@@ -253,17 +253,23 @@ chart_31 <- plot_ly(data_3_long,
 chart_31
 ```
 
-### Composition of Categories Over Years {toc-text="Plot 2"}
+### Trends Over Years {toc-text="Plot 2"}
 
 ```{r message=FALSE, warning=FALSE}
 #| code-fold: true
 #| code-summary: "Show the code"
-ggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +
-  geom_area() +
-  labs(title = "Composition of Categories Over Years",
-       x = "Year",
-       y = "Percentage") +
-  theme_minimal()
+filtered_data <- data_3_long[data_3_long$Sex != "Total", ]
+
+ggplot(filtered_data, aes(x = Year, y = Percentage, color = Category)) +
+  geom_line() +
+  facet_wrap(~Sex) +
+  labs(title = "Trends Over Years", x = "Year", y = "Percentage") +
+  theme_minimal() +
+  scale_x_continuous(breaks = years, labels = years) +
+  theme(
+    axis.text.x = element_text(size = 8, hjust = 0.5),
+    plot.title = element_text(hjust = 0.5)
+  )
 ```
 
 ### Boxplot of Percentage by Category and Sex {toc-text="Plot 3"}
