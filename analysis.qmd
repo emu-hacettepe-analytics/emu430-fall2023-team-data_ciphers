@@ -137,7 +137,7 @@ ggplot(data_2_longer, aes(x = gender, y = rate, fill = gender)) +
   geom_boxplot() +
   facet_grid(. ~ usage) +
   labs(title = "Distribution of Alcohol Usage Rate by Consume Status and Gender",
-       x = "Consume Status",
+       x = "Gender",
        y = "Rate") +
   scale_fill_manual(values = c("women" = "#FC90FF", "men" = "#1E7DFF"), 
                     breaks = c("women", "men")) +
@@ -181,7 +181,7 @@ ggplot(consumers_data, aes(x = year, y = age, fill = rate)) +
        x = "Year",
        y = "Age Group",
        fill = "Rate") +
-  scale_fill_gradient(low = "white", high = "red") +
+  scale_fill_gradient(low = "white", high = "#fc8d62") +
   theme_minimal()
 ```
 
