@@ -100,8 +100,8 @@ ggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = as.factor(Year)))
 ```{r message=FALSE, warning=FALSE}
 #| code-fold: true
 #| code-summary: "Show the code"
-aabbreviate_disease_names <- abbreviate(data_1_longer$Diseases)
-p6 <- plot_ly(data_1_longer,
+abbreviate_disease_names <- abbreviate(data_1_longer$Diseases)
+box_13 <- plot_ly(data_1_longer,
               x = ~reorder(abbreviate_disease_names, -Percentage),
               y = ~Percentage,
               color = ~Gender,
@@ -113,7 +113,7 @@ p6 <- plot_ly(data_1_longer,
                       zeroline = FALSE),
          yaxis = list(title = "Percentage",
                       zeroline = FALSE))
-p6
+box_13
 ```
 
 ## Data Set 2 : The Percentage of Individuals' Status of Alcohol Use by Sex and Age Group, 2016-2022 {toc-text="Dataset 2"}
@@ -142,16 +142,21 @@ data_2_longer <- data_2 %>%
 ```{r message=FALSE, warning=FALSE}
 #| code-fold: true
 #| code-summary: "Show the code"
-ggplot(data_2_longer, aes(x = gender, y = rate, fill = gender)) +
-  geom_boxplot() +
-  facet_grid(. ~ usage) +
-  labs(title = "Distribution of Alcohol Usage Percentage by Consume Status and Gender",
-       x = "Gender",
-       y = "Percentage") +
-  scale_fill_manual(values = c("women" = "#FC90FF", "men" = "#1E7DFF"), 
-                    breaks = c("women", "men")) +
-  scale_y_continuous(trans = "log10") + 
-  theme_minimal()
+chart_21 <- plot_ly(data_2_longer,
+              x = ~usage,
+              y = ~rate,
+              color = ~gender,
+              colors = c("#1E7DFF", "#FC90FF"),
+              type = "box") %>% 
+  layout(boxmode = "group",
+         title = list(text="Distribution of Alcohol Usage Rate by Consume Status and Gender", x = 0, y = 1),
+         xaxis = list(title = "Alcohol Usage",
+                      zeroline = FALSE),
+         yaxis = list(title = "Rate",
+                      zeroline = FALSE,
+                      type = "log",
+                      tickvals = c(1, 10, 100)))
+chart_21
 ```
 
 ### Distribution of Alcohol Usage Percentage by Year {toc-text="Plot 2"}
@@ -159,20 +164,21 @@ ggplot(data_2_longer, aes(x = gender, y = rate, fill = gender)) +
 ```{r message=FALSE, warning=FALSE}
 #| code-fold: true
 #| code-summary: "Show the code"
-ggplot(data_2_longer, aes(x = year, y = rate, color = gender)) +
-  geom_point(alpha = 0.7) +
+chart_22 <- ggplot(data_2_longer, aes(x = year, y = rate, color = gender)) +
+  geom_point(alpha = 0.7, size = 1) +
   stat_summary(fun = "mean", geom = "line", linewidth = 0.3, color = "black",
                aes(group = interaction(usage, gender)), show.legend = TRUE) +
   labs(title = "Distribution of Alcohol Usage Percentage by Year",
        x = "Year",
        y = "Percentage") +
-  scale_color_manual(values = c("#66c2a5", "#fc8d62")) +
+  scale_color_manual(values = c("#1E7DFF", "#FC90FF")) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   theme_minimal() +
   facet_grid(. ~ usage, scales = "free_x", space = "free_x", switch = "both") +
   theme(panel.spacing = unit(2, "lines"))+
   scale_x_continuous(breaks = c(2016, 2019, 2022)) 
 
+ggplotly(chart_22)
 ```
 
 ### Percentage of Consumers of Alcohol Use by Sex and Age Group {toc-text="Plot 3"}
@@ -183,7 +189,7 @@ ggplot(data_2_longer, aes(x = year, y = rate, color = gender)) +
 consumers_data <- data_2_longer %>%
   filter(usage == "Consumers")
 consumers_data$year <- factor(consumers_data$year, levels = c(2016, 2019, 2020, 2022))
-ggplot(consumers_data, aes(x = year, y = age, fill = rate)) +
+chart_23 <- ggplotly(ggplot(consumers_data, aes(x = year, y = age, fill = rate)) +
   geom_tile() +
   facet_grid(cols = vars(gender), scales = "free") +
   labs(title = "Percentage of Consumers of Alcohol Use by Sex and Age Group",
@@ -191,7 +197,9 @@ ggplot(consumers_data, aes(x = year, y = age, fill = rate)) +
        y = "Age Group",
        fill = "Percentage") +
   scale_fill_gradient(low = "white", high = "#fc8d62") +
-  theme_minimal()
+  theme_minimal())
+
+chart_23
 ```
 
 ## Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022 {toc-text="Dataset 3"}
