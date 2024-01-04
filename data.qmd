@@ -15,7 +15,7 @@ format:
 ---
 
 ::: {style="text-align: center"}
-::: {style="font-size: 36px;"}
+::: {style="font-family: Papyrus; font-size: 50px; font-style: normal; font-variant: small-caps; font-weight: 700; line-height: 39.6px; color: #385170;"}
 **Data**
 :::
 :::
@@ -210,12 +210,12 @@ kable(
 
 The first column has year information. The second column indicates whether the individual is male or female. *Category* column has four field values:
 
-\* Underweight
+-   Underweight
 
-\* Normal weight
+-   Normal weight
 
-\* Pre-obese
+-   Pre-obese
 
-\* Obese
+-   Obese
 
 The last column showcases the percentage information.
