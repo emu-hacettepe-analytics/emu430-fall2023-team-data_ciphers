@@ -236,6 +236,7 @@ library(readxl)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
+library(streamgraph)
 data_3 <- read_excel("tidydataset3.xls")
 colnames(data_3) <- c("Year", "Sex", "Underweight", "Normal Weight", "Pre Obese", "Obese")
 data_3_long <- data_3 %>%
@@ -272,7 +273,7 @@ chart_31
 #| code-summary: "Show the code"
 filtered_data <- data_3_long[data_3_long$Sex != "Total", ]
 
-ggplot(filtered_data, aes(x = Year, y = Percentage, color = Category)) +
+chart_321 <- ggplotly(ggplot(filtered_data, aes(x = Year, y = Percentage, color = Category)) +
   geom_line() +
   facet_wrap(~Sex) +
   labs(title = "Trends Over Years", x = "Year", y = "Percentage") +
@@ -281,7 +282,21 @@ ggplot(filtered_data, aes(x = Year, y = Percentage, color = Category)) +
   theme(
     axis.text.x = element_text(size = 8, hjust = 0.5),
     plot.title = element_text(hjust = 0.5)
-  )
+  ))
+
+chart_321
+
+summarized_3_long <- data_3_long %>%
+  filter(Sex == "Total")
+
+chart_322 <- streamgraph(summarized_3_long,
+                        key = "Category",
+                        value = "Percentage",
+                        date = "Year") %>%
+  sg_fill_manual(c("#3A20B8", "#7D78EC", "#AE89ED", "#FDBDFF")) %>%
+  sg_legend(show = TRUE, label = "Category:") %>%
+  sg_axis_x(tick_interval = "year")
+chart_322
 ```
 
 ### Boxplot of Percentage by Category and Sex {toc-text="Plot 3"}
