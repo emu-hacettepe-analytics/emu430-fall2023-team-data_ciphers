@@ -34,6 +34,8 @@ format:
 -   Our data set contains a wide range of health-related information in Turkey. This information includes health habits, health care use, prevalent diseases and demographic details. As a team, we analysed health patterns among different age and gender groups, identified variations in health behaviors and disease occurrence, and understood health service utilization. Providing valuable insights for health policies and activities is our ultimate goal.
 
 -   The data, especially when it is visualized such as below, provides us with a good understanding of the situation particularly with respect to age and sex. When we look through the various tables and plots we can see that more women seem to suffer from various health issues than men while men reportedly consume more alcohol than women. This kind of distinction not only lead us to think about sociological and cultural factors, and oppression; it also brings light to a much bigger issue in the medical field that not a lot of people consider: Women were excluded from being subjects for medical research until late 1980s. [This source](https://orwh.od.nih.gov/toolkit/recruitment/history#:~:text=In%201986%2C%20NIH%20established%20a,Grants%20and%20Contracts%20in%201987.) says that only in 1986, NIH established a policy that encouraged researchers to include women in their studies. In 1989, this inclusion encouragement was extended to minorities as well.
+
+-   Too much alcohol can raise blood pressure and weight, increasing risk of a heart attack, stroke and type 2 diabetes, says [British Heart Foundation](https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/effects-of-alcohol-on-your-heart#:~:text=Too%20much%20alcohol%20can%20raise,at%20Royal%20Liverpool%20University%20Hospitals.) We can actually observe this by looking at Data Set 1's Plot 1 and Data Set 2's implications of higher alcohol usage by men. In Data Set 1 - Plot 1 the only categories where numbers for men surpasses those of women are in fact, heart attack and stroke.
 :::
 
 ## Dataset 1 : The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022 {toc-text="Dataset 1"}
@@ -85,6 +87,8 @@ plot <- plot_ly(summary_data,
 
 plot
 ```
+
+One look at this plot and we can tell that women are more commonly reported to have health problems than men. Two categories are exceptions: Myocardial infarction, also known as a *heart attack*, and stroke.
 
 ### Percentage by Disease with Year Connection {toc-text="Plot 2"}
 
