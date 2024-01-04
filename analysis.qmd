@@ -54,10 +54,12 @@ plot <- plot_ly(summary_data,
                 type = "bar") %>%
   layout(title = list(text="Average Percentage by Disease with Gender Connection", x = 0, y = 1),
          xaxis = list(title = "Diseases",
-                      zeroline = FALSE),
+                      zeroline = FALSE,
+                      tickangle = 45,
+                      categoryorder = "trace"),
          yaxis = list(title = "Percentage",
                       zeroline = FALSE))
-  
+
 plot
 ```
 
@@ -192,9 +194,9 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 data_3 <- read_excel("tidydataset3.xls")
-colnames(data_3) <- c("Year", "Sex", "Underweight", "Normal_weight", "Pre_Obese", "Obese")
+colnames(data_3) <- c("Year", "Sex", "Underweight", "Normal Weight", "Pre Obese", "Obese")
 data_3_long <- data_3 %>%
-  pivot_longer(cols = c(Underweight, Normal_weight, Pre_Obese, Obese),
+  pivot_longer(cols = c(Underweight, 'Normal Weight', 'Pre Obese', Obese),
                names_to = "Category",
                values_to = "Percentage")
 
