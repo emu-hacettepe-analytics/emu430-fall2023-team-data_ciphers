@@ -2,153 +2,78 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Data Ciphers",
+    "title": "Team Members",
     "section": "",
-    "text": "Welcome :) This is our project webpage\nPlease stay tuned to follow our project activities."
+    "text": "Data Ciphers\n\nWelcome :) This is our project webpage\nPlease stay tuned to follow our project activities."
   },
   {
     "objectID": "index.html#türkiye-health-survey-2022",
     "href": "index.html#türkiye-health-survey-2022",
-    "title": "Data Ciphers",
-<<<<<<< Updated upstream
+    "title": "Team Members",
     "section": "Türkiye Health Survey, 2022",
     "text": "Türkiye Health Survey, 2022\n\n\n\n\n\n\nThe Türkiye Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs. (TurkStat, 2023)1\nIn this study, we are focused on analyzing the distribution of main diseases/health problems, status of alcohol use and body mass indexes among individuals by sex."
-=======
-    "section": "Turkey Health Survey",
-    "text": "Turkey Health Survey\n\n\n\n\n\n\nThe Turkey Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs.\nThis part is going to be updated soon…"
-  },
-  {
-    "objectID": "analysis.html",
-    "href": "analysis.html",
-    "title": "Analysis",
-    "section": "",
-    "text": "About this site\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "data.html",
-    "href": "data.html",
-    "title": "Data",
-    "section": "",
-    "text": "This part is going to be updated soon…\nData source: Turkey Health Survey 2022"
-  },
-  {
-    "objectID": "data.html#general-information-about-the-data",
-    "href": "data.html#general-information-about-the-data",
-    "title": "Data",
-    "section": "",
-    "text": "This part is going to be updated soon…\nData source: Turkey Health Survey 2022"
-  },
-  {
-    "objectID": "data.html#why-we-selected-this-data",
-    "href": "data.html#why-we-selected-this-data",
-    "title": "Data",
-    "section": "Why We Selected This Data",
-    "text": "Why We Selected This Data\nThis part is going to be updated soon…"
-  },
-  {
-    "objectID": "data.html#our-objectives",
-    "href": "data.html#our-objectives",
-    "title": "Data",
-    "section": "Our Objectives",
-    "text": "Our Objectives\nThis part is going to be updated soon…"
-  },
-  {
-    "objectID": "data.html#importing-and-preprocessing-data-our-approach",
-    "href": "data.html#importing-and-preprocessing-data-our-approach",
-    "title": "Data",
-    "section": "Importing and Preprocessing Data: Our Approach",
-    "text": "Importing and Preprocessing Data: Our Approach\n\nBefore importing our data, we manually cleaned it by removing Turkish text and unnecessary information. Then, we used the ‘dplyr’ and ‘tidyr’ packages to improve our understanding of the data. The relevant code is provided below."
-  },
-  {
-    "objectID": "data.html#exploratory-data-analysis",
-    "href": "data.html#exploratory-data-analysis",
-    "title": "Data",
-    "section": "Exploratory Data Analysis",
-    "text": "Exploratory Data Analysis\nThis part is going to be updated soon…"
-<<<<<<< Updated upstream
-  },
-  {
-    "objectID": "index.html#türkiye-health-survey",
-    "href": "index.html#türkiye-health-survey",
-    "title": "Data Ciphers",
-    "section": "Türkiye Health Survey",
-    "text": "Türkiye Health Survey\n\n\n\n\n\n\nThe Türkiye Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs. (TurkStat, 2023)1\nIn this study, we are focudes on analyzing the distribution of main diseases/health problems, status of alcohol use and body mass indexes among individuals by sex."
->>>>>>> Stashed changes
   },
   {
     "objectID": "index.html#footnotes",
     "href": "index.html#footnotes",
-    "title": "Data Ciphers",
+    "title": "Team Members",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nTurkish Statistical Institute. (2023). Türkiye Health Survey, 2022. https://data.tuik.gov.tr/Bulten/Index?p=Turkiye-Health-Survey-2022-49747↩︎"
   },
   {
-<<<<<<< Updated upstream
     "objectID": "analysis.html",
     "href": "analysis.html",
-    "title": "Analysis",
+    "title": "Data Cipher's Project Lab",
     "section": "",
-    "text": "Show the code\nabbreviate_disease_names &lt;- abbreviate(data_1_longer$Diseases)\nggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = Gender)) +\n  geom_bar(stat = \"summary\", fun = \"mean\", position = \"dodge\", width = 0.7) +\n  labs(title = \"Average Percentage by Disease with Gender Connection\",\n       x = \"Diseases\",\n       y = \"Percentage\") +\n  scale_x_discrete(labels = abbreviate_disease_names) +\n  scale_y_continuous(breaks = seq(0, 30, by = 5)) +\n  scale_fill_manual(values = c(\"#99C2FF\", \"#FFB6C1\")) +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\n\n\n\n\n\n\nShow the code\nabbreviate_disease_names &lt;- abbreviate(data_1_longer$Diseases)\n\ncustom_colors &lt;- c(\"#66c2a5\", \"#fc8d62\", \"#8da0cb\")\n\nggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = as.factor(Year))) +\n  geom_bar(stat = \"identity\", position = \"dodge\", width = 0.7) +\n  labs(title = \"Percentage by Disease with Year Connection\",\n       x = \"Diseases\",\n       y = \"Percentage\",\n       fill = \"Year\") +\n  scale_x_discrete(labels = abbreviate_disease_names) +\n  scale_y_continuous(breaks = seq(0, 35, by = 5)) +\n  scale_fill_manual(values = custom_colors) +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\n\n\n\n\n\n\nShow the code\nabbreviate_disease_names &lt;- abbreviate(data_1_longer$Diseases)\n\nggplot(data_1_longer, aes(x = reorder(abbreviate_disease_names, -Percentage), y = Percentage, fill = Gender)) +\n  geom_boxplot(position = \"dodge\", alpha = 0.7) +\n  labs(title = \"Distribution of Percentage by Gender for Each Disease\",\n       x = \"Abbreviated Diseases\",\n       y = \"Percentage\",\n       fill = \"Gender\") +\n  scale_fill_manual(values = c(\"#66c2a5\", \"#fc8d62\")) +\n  theme_minimal() +\n  theme(plot.title = element_text(hjust = 0.5),\n        axis.text.x = element_text(angle = 45, hjust = 1))"
+    "text": "Analysis"
   },
   {
     "objectID": "analysis.html#dataset-1-the-percentage-of-main-diseaseshealth-problems-declared-by-individuals-in-the-last-12-months-by-sex-2016-2022",
     "href": "analysis.html#dataset-1-the-percentage-of-main-diseaseshealth-problems-declared-by-individuals-in-the-last-12-months-by-sex-2016-2022",
-    "title": "Analysis",
-    "section": "",
-    "text": "Show the code\nabbreviate_disease_names &lt;- abbreviate(data_1_longer$Diseases)\nggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = Gender)) +\n  geom_bar(stat = \"summary\", fun = \"mean\", position = \"dodge\", width = 0.7) +\n  labs(title = \"Average Percentage by Disease with Gender Connection\",\n       x = \"Diseases\",\n       y = \"Percentage\") +\n  scale_x_discrete(labels = abbreviate_disease_names) +\n  scale_y_continuous(breaks = seq(0, 30, by = 5)) +\n  scale_fill_manual(values = c(\"#99C2FF\", \"#FFB6C1\")) +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\n\n\n\n\n\n\nShow the code\nabbreviate_disease_names &lt;- abbreviate(data_1_longer$Diseases)\n\ncustom_colors &lt;- c(\"#66c2a5\", \"#fc8d62\", \"#8da0cb\")\n\nggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = as.factor(Year))) +\n  geom_bar(stat = \"identity\", position = \"dodge\", width = 0.7) +\n  labs(title = \"Percentage by Disease with Year Connection\",\n       x = \"Diseases\",\n       y = \"Percentage\",\n       fill = \"Year\") +\n  scale_x_discrete(labels = abbreviate_disease_names) +\n  scale_y_continuous(breaks = seq(0, 35, by = 5)) +\n  scale_fill_manual(values = custom_colors) +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\n\n\n\n\n\n\nShow the code\nabbreviate_disease_names &lt;- abbreviate(data_1_longer$Diseases)\n\nggplot(data_1_longer, aes(x = reorder(abbreviate_disease_names, -Percentage), y = Percentage, fill = Gender)) +\n  geom_boxplot(position = \"dodge\", alpha = 0.7) +\n  labs(title = \"Distribution of Percentage by Gender for Each Disease\",\n       x = \"Abbreviated Diseases\",\n       y = \"Percentage\",\n       fill = \"Gender\") +\n  scale_fill_manual(values = c(\"#66c2a5\", \"#fc8d62\")) +\n  theme_minimal() +\n  theme(plot.title = element_text(hjust = 0.5),\n        axis.text.x = element_text(angle = 45, hjust = 1))"
+    "title": "Data Cipher's Project Lab",
+    "section": "1 Dataset 1 : The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022",
+    "text": "1 Dataset 1 : The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022\n\n1.1 Average Percentage by Disease with Gender Connection\n\n\nShow the code\nsummary_data &lt;- data_1_longer %&gt;%\n  group_by(Diseases, Gender) %&gt;%\n  summarise(mean_percentage = mean(Percentage))\nabbreviate_disease_names &lt;- abbreviate(summary_data$Diseases)\nplot &lt;- plot_ly(summary_data, \n                x = ~abbreviate_disease_names, \n                y = ~mean_percentage, \n                color = ~Gender,\n                colors = c(\"#1E7DFF\", \"#FC90FF\"),\n                type = \"bar\") %&gt;%\n  layout(title = list(text=\"Average Percentage by Disease with Gender Connection\", x = 0, y = 1),\n         xaxis = list(title = \"Diseases\",\n                      zeroline = FALSE,\n                      tickangle = 45,\n                      categoryorder = \"trace\"),\n         yaxis = list(title = \"Percentage\",\n                      zeroline = FALSE))\n\nplot\n\n\n\n\n\n\n\n\n1.2 Percentage by Disease with Year Connection\n\n\nShow the code\nabbreviate_disease_names &lt;- abbreviate(data_1_longer$Diseases)\n\ncustom_colors &lt;- c(\"#66c2a5\", \"#fc8d62\", \"#8da0cb\")\n\nggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = as.factor(Year))) +\n  geom_bar(stat = \"identity\", position = \"dodge\", width = 0.7) +\n  labs(title = \"Percentage by Disease with Year Connection\",\n       x = \"Diseases\",\n       y = \"Percentage\",\n       fill = \"Year\") +\n  scale_x_discrete(labels = abbreviate_disease_names) +\n  scale_y_continuous(breaks = seq(0, 35, by = 5)) +\n  scale_fill_manual(values = custom_colors) +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\n\n\n\n1.3 Distribution of Percentage by Gender for Each Disease\n\n\nShow the code\naabbreviate_disease_names &lt;- abbreviate(data_1_longer$Diseases)\np6 &lt;- plot_ly(data_1_longer,\n              x = ~reorder(abbreviate_disease_names, -Percentage),\n              y = ~Percentage,\n              color = ~Gender,\n              colors = c(\"#1E7DFF\", \"#FC90FF\"),\n              type = \"box\") %&gt;% \n  layout(boxmode = \"group\",\n         title = \"Distribution of Percentage by Gender for Each Disease\",\n         xaxis = list(title = \"Diseases\",\n                      zeroline = FALSE),\n         yaxis = list(title = \"Percentage\",\n                      zeroline = FALSE))\np6"
   },
   {
     "objectID": "analysis.html#data-set-2-the-percentage-of-individuals-status-of-alcohol-use-by-sex-and-age-group-2016-2022",
     "href": "analysis.html#data-set-2-the-percentage-of-individuals-status-of-alcohol-use-by-sex-and-age-group-2016-2022",
-    "title": "Analysis",
+    "title": "Data Cipher's Project Lab",
     "section": "2 Data Set 2 : The Percentage of Individuals’ Status of Alcohol Use by Sex and Age Group, 2016-2022",
-    "text": "2 Data Set 2 : The Percentage of Individuals’ Status of Alcohol Use by Sex and Age Group, 2016-2022\n\n2.1 Alcohol Usage Rate Distribution by Age Group\n\n\nShow the code\nggplot(data_2_longer, aes(x = age, y = rate, fill = gender)) +\n  geom_boxplot() +\n  labs(title = \"Distribution of Alcohol Usage Rate by Age Group\",\n       x = \"Age Group\",\n       y = \"Rate\") +\n  scale_fill_manual(values = c(\"#99C2FF\", \"#FFB6C1\")) +\n  theme_minimal()\n\n\n\n\n\n\n\n2.2 Strip Plot Showing Distribution of Alcohol Usage Rate by Age Group\n\n\nShow the code\nggplot(data_2_longer, aes(x = age, y = rate, color = gender)) +\n  geom_jitter(alpha = 0.7) +\n  labs(title = \"Distribution of Alcohol Usage Rate by Age Group\",\n       x = \"Age Group\",\n       y = \"Rate\") +\n  scale_color_manual(values = c(\"#66c2a5\", \"#fc8d62\")) +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +\n  theme_minimal()\n\n\n\n\n\n\n\n2.3 Distribution of Alcohol Usage Rates in Age Groups\n\n\nShow the code\nggplot(data_2_longer, aes(x = rate, fill = age)) +\n  geom_histogram(binwidth = 10, position = \"dodge\", alpha = 0.7) +\n  labs(title = \"Distribution of Alcohol Usage Rates in Age Groups\",\n       x = \"Rate\",\n       y = \"Count\") +\n  theme_minimal()\n\n\n\n\n\n\n\n2.4 Usage Across Years by Gender\n\n\nShow the code\ncustom_colors &lt;- c(\"#fc8d62\", \"#8da0cb\",\"#66c2a5\")\nggplot(data_2_longer, aes(x = year, y = rate, fill = usage)) +\n  geom_bar(stat = \"identity\", position = \"dodge\") +\n  facet_grid(. ~ gender) +\n  labs(title = \"Usage Across Years by Gender\",\n       x = \"Year\",\n       y = \"Rate\") +\n  scale_y_continuous(breaks = seq(0, 35, by = 5)) +\n  scale_fill_manual(values = custom_colors) +\n  theme_minimal()"
+    "text": "2 Data Set 2 : The Percentage of Individuals’ Status of Alcohol Use by Sex and Age Group, 2016-2022\n\n2.1 Distribution of Alcohol Usage Rate by Consume Status and Gender\n\n\nShow the code\nggplot(data_2_longer, aes(x = gender, y = rate, fill = gender)) +\n  geom_boxplot() +\n  facet_grid(. ~ usage) +\n  labs(title = \"Distribution of Alcohol Usage Rate by Consume Status and Gender\",\n       x = \"Gender\",\n       y = \"Rate\") +\n  scale_fill_manual(values = c(\"women\" = \"#FC90FF\", \"men\" = \"#1E7DFF\"), \n                    breaks = c(\"women\", \"men\")) +\n  scale_y_continuous(trans = \"log10\") + \n  theme_minimal()\n\n\n\n\n\n\n\n2.2 Distribution of Alcohol Usage Rate by Year\n\n\nShow the code\nggplot(data_2_longer, aes(x = year, y = rate, color = gender)) +\n  geom_point(alpha = 0.7) +\n  stat_summary(fun = \"mean\", geom = \"line\", linewidth = 0.3, color = \"black\",\n               aes(group = interaction(usage, gender)), show.legend = TRUE) +\n  labs(title = \"Distribution of Alcohol Usage Rate by Year\",\n       x = \"Year\",\n       y = \"Rate\") +\n  scale_color_manual(values = c(\"#66c2a5\", \"#fc8d62\")) +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +\n  theme_minimal() +\n  facet_grid(. ~ usage, scales = \"free_x\", space = \"free_x\", switch = \"both\") +\n  theme(panel.spacing = unit(2, \"lines\"))+\n  scale_x_continuous(breaks = c(2016, 2019, 2022)) \n\n\n\n\n\n\n\n2.3 Percentage of Consumers of Alcohol Use by Sex and Age Group\n\n\nShow the code\nconsumers_data &lt;- data_2_longer %&gt;%\n  filter(usage == \"Consumers\")\nconsumers_data$year &lt;- factor(consumers_data$year, levels = c(2016, 2019, 2020, 2022))\nggplot(consumers_data, aes(x = year, y = age, fill = rate)) +\n  geom_tile() +\n  facet_grid(cols = vars(gender), scales = \"free\") +\n  labs(title = \"Percentage of Consumers of Alcohol Use by Sex and Age Group\",\n       x = \"Year\",\n       y = \"Age Group\",\n       fill = \"Rate\") +\n  scale_fill_gradient(low = \"white\", high = \"#fc8d62\") +\n  theme_minimal()"
   },
   {
     "objectID": "analysis.html#data-set-3-body-mass-index-distribution-of-individuals-by-sex-2008-2022",
     "href": "analysis.html#data-set-3-body-mass-index-distribution-of-individuals-by-sex-2008-2022",
-    "title": "Analysis",
+    "title": "Data Cipher's Project Lab",
     "section": "3 Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022",
-    "text": "3 Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022\n\n3.1 Percentage of Categories Over Years\n\n\nShow the code\nggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +\n  geom_bar(stat = \"identity\", position = \"dodge\") +\n  labs(title = \"Percentage of Categories Over Years\",\n       x = \"Year\",\n       y = \"Percentage\") +\n  theme_minimal()\n\n\n\n\n\n\n\n3.2 Percentage Trends Over Years\n\n\nShow the code\nggplot(data_3_long, aes(x = Year, y = Percentage, color = Category)) +\n  geom_line() +\n  labs(title = \"Percentage Trends Over Years\",\n       x = \"Year\",\n       y = \"Percentage\") +\n  theme_minimal()\n\n\n\n\n\n\n\n3.3 Composition of Categories Over Years\n\n\nShow the code\nggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +\n  geom_area() +\n  labs(title = \"Composition of Categories Over Years\",\n       x = \"Year\",\n       y = \"Percentage\") +\n  theme_minimal()\n\n\n\n\n\n\n\n3.4 Percentage of Categories by Gender\n\n\nShow the code\nggplot(data_3_long, aes(x = Sex, y = Percentage, fill = Category)) +\n  geom_bar(stat = \"identity\", position = \"dodge\") +\n  labs(title = \"Percentage of Categories by Gender\",\n       x = \"Gender\",\n       y = \"Percentage\") +\n  theme_minimal()"
+    "text": "3 Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022\n\n3.1 Percentage of Categories Over Years\n\n\nShow the code\nggplot(data_3_long[data_3_long$Year &gt;= 2008 & data_3_long$Year &lt;= 2022, ], \n       aes(x = factor(Year, levels = desired_years), y = Percentage, fill = Category)) +\n  geom_bar(stat = \"identity\", position = \"dodge\") +\n  labs(title = \"Percentage of Categories (2008-2022)\",\n       x = \"Year\",\n       y = \"Percentage\") +\n  scale_x_discrete(labels = as.character(desired_years)) +\n  theme_minimal()\n\n\n\n\n\n\n\n3.2 Composition of Categories Over Years\n\n\nShow the code\nggplot(data_3_long, aes(x = Year, y = Percentage, fill = Category)) +\n  geom_area() +\n  labs(title = \"Composition of Categories Over Years\",\n       x = \"Year\",\n       y = \"Percentage\") +\n  theme_minimal()\n\n\n\n\n\n\n\n3.3 Percentage of Categories by Gender\n\n\nShow the code\nggplot(data_3_long, aes(x = Sex, y = Percentage, fill = Category)) +\n  geom_bar(stat = \"identity\", position = \"dodge\") +\n  labs(title = \"Percentage of Categories by Gender\",\n       x = \"Gender\",\n       y = \"Percentage\") +\n  theme_minimal()"
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data Cipher's Project Lab",
+    "section": "",
+    "text": "Data"
   },
   {
     "objectID": "data.html#general-information-about-the-data",
     "href": "data.html#general-information-about-the-data",
-    "title": "Data",
+    "title": "Data Cipher's Project Lab",
     "section": "1 General Information About the Data",
     "text": "1 General Information About the Data\n\nThe Türkiye Health Survey wants to find out how healthy people are and collect important information about key health measures. It helps compare health internationally and gives insights into what health needs a country has for its development.\n\nData source: Türkiye Health Survey 2022\n\n1.1 Why We Selected This Data\n\nWe picked the ‘Türkiye Health Survey’ data set for our EMU430 course because it’s interesting and fits well with what we’re learning. This data set gives us a lot of information about health in Turkey. We can study things like how people take care of their health, how much alcohol they drink, what common diseases there are, and the body mass index of individuals. It’s a good choice for our course because it covers a lot of important health topics in Turkey.\n\n\n\n1.2 Our Objectives\n\nOur main goal is to study how people’s health changes with age and differs between men and women. We want to understand how behaviors and diseases vary based on these factors. By doing this research, we hope to gather useful information that can be used to create better health policies and strategies.\nOur plan is to use numbers and graphs to look for patterns and differences in the data. We believe that showing our findings visually will make them easier to understand. But before we start, we need to make sure the information we have is correct and complete. We’ll check and fix any mistakes or missing details to ensure that our results can be trusted. Following this plan, we aim to make our project’s goals, the data we’re using, and how we’re studying it clear. This will set a strong foundation for our project to move forward successfully."
   },
   {
     "objectID": "data.html#importing-and-preprocessing-data-our-approach",
     "href": "data.html#importing-and-preprocessing-data-our-approach",
-    "title": "Data",
+    "title": "Data Cipher's Project Lab",
     "section": "2 Importing and Preprocessing Data: Our Approach",
     "text": "2 Importing and Preprocessing Data: Our Approach\n\nBefore importing our data, we manually cleaned it by removing Turkish text and unnecessary information. Then, we used the ‘dplyr’ and ‘tidyr’ packages to improve our understanding of the data. The relevant code is provided below.\n\nThis study includes three data-sets:\n\n2.1 Percentage of Health Problems in the Last 12 Months by Sex, 2016-2022\n\n\nShow the code\nsuppressPackageStartupMessages(library(dplyr))\nlibrary(readxl)\nlibrary(dplyr)\nlibrary(tidyr)\n\ndata_1 &lt;- read_excel(\"tidydataset1.xls\")\ncolnames(data_1) &lt;- c(\"Diseases\", \"men_2016\", \"women_2016\", \"men_2019\", \"women_2019\", \"men_2022\", \"women_2022\")\n\ndata_1_longer &lt;- data_1 %&gt;%\n  pivot_longer(cols = starts_with(c(\"men\", \"women\")),\n               names_to = \"Gender\",\n               values_to = \"Percentage\") %&gt;%\n  separate(Gender, into = c(\"Gender\", \"Year\"), sep = \"_\") %&gt;%\n  arrange(Diseases) %&gt;%\n  mutate_at(vars(Year, Percentage), as.numeric) %&gt;%\n  mutate(Diseases = gsub(\"^\\\\n\", \"\", Diseases))\n\n\nClick here to download the associated .RData file for Dataset 1.\n\n\n2.2 Percentage of Status of Alcohol Use by Sex and Age Group, 2016-2022\n\n\nShow the code\nsuppressPackageStartupMessages(library(dplyr))\nlibrary(readxl)\nlibrary(dplyr)\nlibrary(tidyr)\n\ndata_2 &lt;- read_excel(\"tidydataset2.xls\")\ncolnames(data_2) &lt;- c(\"age\", \"men_2016\", \"women_2016\", \"men_2019\", \"women_2019\", \"men_2022\", \"women_2022\", \"usage\")\ndata_2_longer &lt;- data_2 %&gt;%\n  pivot_longer(cols = starts_with(c(\"men\", \"women\")),\n               names_to = \"gender\",\n               values_to = \"rate\") %&gt;%\n  separate(gender, into = c(\"gender\", \"year\"), sep = \"_\") %&gt;%\n  arrange(age) %&gt;%\n  mutate_at(vars(year, rate), as.numeric) %&gt;%\n  na.omit()\n\n\nClick here to download the associated .RData file for Dataset 2.\n\n\n2.3 Body Mass Index Distribution of Individuals by Sex, 2008-2022\n\n\nShow the code\nsuppressPackageStartupMessages(library(dplyr))\nlibrary(readxl)\nlibrary(dplyr)\nlibrary(tidyr)\n\ndata_3 &lt;- read_excel(\"tidydataset3.xls\")\ncolnames(data_3) &lt;- c(\"Year\", \"Sex\", \"Underweight\", \"Normal_weight\", \"Pre_Obese\", \"Obese\")\ndata_3_long &lt;- data_3 %&gt;%\n  pivot_longer(cols = c(Underweight, Normal_weight, Pre_Obese, Obese),\n               names_to = \"Category\",\n               values_to = \"Percentage\") %&gt;%\n  mutate(sex_group = ifelse(Sex == \"Total\", \"Total\", \"Individual\")) %&gt;%\n  group_by(sex_group) %&gt;%\n  ungroup() %&gt;%\n  dplyr::filter(Sex != \"Total\" | n() == 1) %&gt;%\n  select(-sex_group)\n\n\nClick here to download the associated .RData file for Dataset 3.\n\n\n\n\n\n\nNote\n\n\n\nIn the data pre-processing phase, we used ChatGPT to provide necessary functions and increase the quality of our content. Some of the functions are: “mutate_at”, “na.omit”, “gsub”."
   },
   {
     "objectID": "data.html#exploratory-data-analysis",
     "href": "data.html#exploratory-data-analysis",
-    "title": "Data",
+    "title": "Data Cipher's Project Lab",
     "section": "3 Exploratory Data Analysis",
     "text": "3 Exploratory Data Analysis\nIn our project, we are working on three data sets, all of which were sourced from the Turkish Statistical Institute’s Türkiye Health Survey that was conducted in 2022.\n\n3.1 Dataset 1 : The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022\nThis data set showcases the percentage of health problems by sex. Only people over the age of 15 were considered for the study, and Alzheimer was evaluated for individuals in the 65+ age group.\n\n\n\nThe Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex\n\n\nDiseases\nGender\nYear\nPercentage\n\n\n\n\nAllergy\nmen\n2016\n7.540591\n\n\nAllergy\nmen\n2019\n8.926597\n\n\nAllergy\nmen\n2022\n6.566730\n\n\nAllergy\nwomen\n2016\n13.900246\n\n\nAllergy\nwomen\n2019\n15.621691\n\n\nAllergy\nwomen\n2022\n12.518126\n\n\nAlzheimer\nmen\n2016\n5.095686\n\n\nAlzheimer\nmen\n2019\n5.955258\n\n\nAlzheimer\nmen\n2022\n5.069767\n\n\nAlzheimer\nwomen\n2016\n6.065594\n\n\nAlzheimer\nwomen\n2019\n6.008264\n\n\nAlzheimer\nwomen\n2022\n5.824677\n\n\nArthrosis\nmen\n2016\n4.858361\n\n\nArthrosis\nmen\n2019\n7.636946\n\n\nArthrosis\nmen\n2022\n4.863095\n\n\n\n\n\n\n\n\nThe first column, titled Diseases corresponds to the diseases, and the following columns represent the gender of the individual, the year the data was collected and the percentage information respectively. If we take a look at the visualization of the data as presented below we can see that low back problems are consistently what causes the most issues, in both men and women. In general, women have declared their health problems more than men for all years that were considered for the study.\n\n\n\n\nThe distribution of declared health problems for both genders, 2016\n\n\n\n\n\nThe distribution of declared health problems for both genders, 2019\n\n\n\n\n\nThe distribution of declared health problems for both genders, 2022\n\n\n\n\n3.2 Data Set 2 : The Percentage of Individuals’ Status of Alcohol Use by Sex and Age Group, 2016-2022\nThis data set showcases the percentage of individuals’ alcohol consumption status by sex and age group.\nThe first column of the table below shows the various age ranges from the study, starting from age 15 and going all the way up to 75+.\n\nThe second column, titled usage, has three different field values: *Consumers: Indicates the individual partakes in regular alcohol consumption. *Doesn’t consume: Means the individual has consumed alcohol before, but not anymore/not regularly. *Never consume: Indicates the individual has never consumed alcohol before.\n\n\n\n\nThe Percentage of Individuals' Status of Alcohol Use by Sex and Age Group\n\n\nAge\nUser Type\nGender\nYear\nPercentage\n\n\n\n\n15-24\nConsumers\nmen\n2016\n13.0800576\n\n\n15-24\nConsumers\nmen\n2019\n16.3688405\n\n\n15-24\nConsumers\nmen\n2022\n11.5901638\n\n\n15-24\nConsumers\nwomen\n2016\n5.4064093\n\n\n15-24\nConsumers\nwomen\n2019\n6.2480878\n\n\n15-24\nConsumers\nwomen\n2022\n4.9318588\n\n\n15-24\nDoesn't consume\nmen\n2016\n5.9217499\n\n\n15-24\nDoesn't consume\nmen\n2019\n5.7362602\n\n\n15-24\nDoesn't consume\nmen\n2022\n2.3365367\n\n\n15-24\nDoesn't consume\nwomen\n2016\n3.9478235\n\n\n15-24\nDoesn't consume\nwomen\n2019\n3.0067650\n\n\n15-24\nDoesn't consume\nwomen\n2022\n0.8584534\n\n\n15-24\nNever consume\nmen\n2016\n80.9981924\n\n\n15-24\nNever consume\nmen\n2019\n77.8948993\n\n\n15-24\nNever consume\nmen\n2022\n86.0732995\n\n\n\n\n\n\n\nThe third column shows the gender of the individuals that took part in the study, followed by the year on column 4 and the percentages on column 5.\nWe can further understand this data by visualizing it via a bar chart, as shown below.\n\n\n\nThe distribution of alcohol consumption habits for both genders; 2016, 2019, 2022\n\n\n\n\n3.3 Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022\n\nThis data set showcases the body mass index distribution of male and female individuals, as well as a total for the year of each sub-study. The data here was collected every two years starting from 2008, and ending at 2022.\n\n\n\n\nBody Mass Index Distribution of Individuals by Sex\n\n\nYear\nSex\nCategory\nPercentage\n\n\n\n\n2008\nMale\nUnderweight\n2.70\n\n\n2008\nMale\nNormal_weight\n48.10\n\n\n2008\nMale\nPre_Obese\n36.90\n\n\n2008\nMale\nObese\n12.30\n\n\n2008\nFemale\nUnderweight\n5.90\n\n\n2008\nFemale\nNormal_weight\n48.20\n\n\n2008\nFemale\nPre_Obese\n27.40\n\n\n2008\nFemale\nObese\n18.50\n\n\n2010\nMale\nUnderweight\n3.46\n\n\n2010\nMale\nNormal_weight\n46.12\n\n\n2010\nMale\nPre_Obese\n37.26\n\n\n2010\nMale\nObese\n13.16\n\n\n2010\nFemale\nUnderweight\n5.93\n\n\n2010\nFemale\nNormal_weight\n44.73\n\n\n2010\nFemale\nPre_Obese\n28.39\n\n\n\n\n\n\n\nThe first column has year information. The second column indicates whether the individual is male or female. Category column has four field values:\n* Underweight\n* Normal weight\n* Pre-obese\n* Obese\nThe last column showcases the percentage information."
-<<<<<<< Updated upstream
-=======
-  },
-  {
-    "objectID": "data.html#explatory-analysis",
-    "href": "data.html#explatory-analysis",
-    "title": "Analysis",
-    "section": "4 EXPLATORY ANALYSIS",
-    "text": "4 EXPLATORY ANALYSIS\nIn our project, we are working on three data sets, all of which were sourced from the Turkish Statistical Institute’s Türkiye Health Survey that was conducted in 2022.\n\n4.1 Dataset 1 : The Percentage of Main Diseases/Health Problems Declared by Individuals in the Last 12 Months by Sex, 2016-2022\nThis data set showcases the percentage of health problems by sex. Only people over the age of 15 were considered for the study, and Alzheimer was evaluated for individuals in the 65+ age group.\n\nlibrary(DT)\ndataset_1 &lt;- read_xls(\"tidydataset1.xls\")\ndatatable(dataset_1)\n\n\n\n\n\n\nColumn 1 corresponds to the diseases, and the following columns are the percentages for Male (Column 2,4,6) and Female (Column 3,5,7) individuals in 2016, 2019 and 2022. If we take a look at the visualization of the data as presented below we can see that low back problems are consistently what causes the most issues, in both men and women. In general, women have declared their health problems more than men for all years that were considered for the study.\n\n\n\nThe distribution of declared health problems for both genders, 2016\n\n\n\n\n\nThe distribution of declared health problems for both genders, 2019\n\n\n\n\n\nThe distribution of declared health problems for both genders, 2022\n\n\n\n\n4.2 Data Set 2 : The Percentage of Individuals’ Status of Alcohol Use by Sex and Age Group, 2016-2022\nThis data set showcases the percentage of individuals’ alcohol consumption status by sex and age group.\nColumn 1 indicates the age groups starting from 15 years and going all the way to 75+.\nColumn 8 has three different field values: * Consumers : Indicates the individual partakes in regular alcohol consumption. * Doesn’t consume : Means the individual has consumed alcohol before, but not anymore/not regularly. * Never consume : Indicates the individual has never consumed alcohol before.\n\ndataset_2 &lt;- read_xls(\"tidydataset2.xls\")\ndatatable(dataset_2)\n\n\n\n\n\n\nColumns 2, 4, and 6 represent the Male individuals considered in the study in years 2016, 2019 and 2022 respectively.\nColumns 3,5, and 7 represent the Female individuals in the study in years 2016, 2019 and 2022 respectively.\nWe can further understand this data by visualizing it via a bar chart, as shown below.\n\n\n\nThe distribution of alcohol consumption habits for both genders; 2016, 2019, 2022\n\n\n\n\n4.3 Data Set 3 : Body mass index distribution of individuals by sex, 2008-2022\nThis data set showcases the body mass index distribution of male and female individuals, as well as a total for the year of each sub-study. The data here was collected every two years starting from 2008, and ending at 2022.\n\ndataset_3 &lt;- read_xls(\"tidydataset3.xls\")\ndatatable(dataset_3)"
-=======
-    "objectID": "index.html#türkiye-health-survey-2022",
-    "href": "index.html#türkiye-health-survey-2022",
-    "title": "Data Ciphers",
-    "section": "Türkiye Health Survey, 2022",
-    "text": "Türkiye Health Survey, 2022\n\n\n\n\n\n\nThe Türkiye Health Survey aims to uncover people’s overall health and gather information about key health indicators that are important for understanding a country’s development. This study is designed to facilitate international comparisons and provide insights into national health needs. (TurkStat, 2023)1\nIn this study, we are focused on analyzing the distribution of main diseases/health problems, status of alcohol use and body mass indexes among individuals by sex."
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
->>>>>>> Stashed changes
   }
 ]

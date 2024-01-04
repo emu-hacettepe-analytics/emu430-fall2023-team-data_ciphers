@@ -1,5 +1,4 @@
 ---
-title: "Data"
 styles:
   styles.css
 format:
@@ -15,7 +14,13 @@ format:
     number-sections: true
 ---
 
-![](giphy.gif){width="437"}
+::: {style="text-align: center"}
+::: {style="font-size: 36px;"}
+**Data**
+:::
+:::
+
+![](giphy.gif){style="text-align: center" fig-align="center" width="437"}
 
 ## General Information About the Data
 
