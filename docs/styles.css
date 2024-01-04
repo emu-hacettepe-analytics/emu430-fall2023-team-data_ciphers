@@ -6,13 +6,26 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border: 2px solid #8da0cb;
-  color: #8da0cb;
+  border: 2px solid #333333;
+  color: #333333;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 .download-button:hover {
-  background-color: #8da0cb;
+  background-color: #333333;
   color: #fff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.navbar {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 18px;
 }

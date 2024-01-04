@@ -1,36 +1,30 @@
 ---
-title: "Data Ciphers"
-sidebar: false 
+styles:
+  styles.css
+sidebar: false
 ---
+
+::: {style="text-align: center"}
+::: {style="font-size: 36px;"}
+**Data Ciphers**
+:::
 
 Welcome :) This is our project webpage
 
 Please stay tuned to follow our project activities.
 
-![](data_ciphers.gif){width="400"}
-
-# Team Members
-
-1.  [Mert Bekir Kaplan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-mer7kaplan/)
-
-2.  [Doğa Oral](https://emu-hacettepe-analytics.github.io/emu430-fall2023-doaoral/)
-
-3.  [Arda Türkan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-ardaturkan/)
-
-4.  [Ayşenur Eren](https://emu-hacettepe-analytics.github.io/emu430-fall2023-AysenurErenn/)
-
-5.  [Ceren Arslan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-ccerenarslan/)
-
-
-::: callout-important
-Members who did not contribute to the project are removed from the list.
+![](data_ciphers.gif){fig-align="center" width="500"}
 :::
 
-# Project Topic
+# Team Members {style="text-align: center"}
 
-## Türkiye Health Survey, 2022
+[Mert Bekir Kaplan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-mer7kaplan/){.download-button} [Doğa Oral](https://emu-hacettepe-analytics.github.io/emu430-fall2023-doaoral/){.download-button} [Arda Türkan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-ardaturkan/){.download-button} [Ayşenur Eren](https://emu-hacettepe-analytics.github.io/emu430-fall2023-AysenurErenn/){.download-button} [Ceren Arslan](https://emu-hacettepe-analytics.github.io/emu430-fall2023-ccerenarslan/){.download-button}
 
-![](medical.gif){fig-align="center" width="218"}
+# Project Topic {style="text-align: center"}
+
+## Türkiye Health Survey, 2022 {style="text-align: center"}
+
+![](medical.gif){fig-align="center" width="230"}
 
 ::: {style="text-align: justify"}
 The Türkiye Health Survey aims to uncover people's overall health and gather information about key health indicators that are important for understanding a country's development. This study is designed to facilitate international comparisons and provide insights into national health needs. (TurkStat, 2023)[^1]
