@@ -262,7 +262,8 @@ chart_31 <- plot_ly(data_3_long,
   layout(title = list(text="Percentage of Categories (2008-2022)", x = 0, y = 1),
          xaxis = list(title = "Year",
                       tickvals = c(2008, 2010, 2012, 2014, 2016, 2019, 2022)),
-         yaxis = list(title = "Percentage"))
+         yaxis = list(title = "Percentage"),
+        plot_bgcolor = "#FFFDE2")
 
 chart_31
 ```
