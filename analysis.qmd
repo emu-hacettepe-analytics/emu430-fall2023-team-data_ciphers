@@ -113,6 +113,14 @@ ggplot(data_1_longer, aes(x = Diseases, y = Percentage, fill = as.factor(Year)))
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
+This graph tells us a few key things:
+
+-   First is the fact that 2019 was apparently a terrible year.
+
+-   The second is that the most reported cases of health problems seem to be Low Back Disorders and Neck Problems- Which is not all that surprising when you consider the current state of world affairs, is it? People are working 9-5, hunched over desks and keyboards all day, and the situation is not very different for students, which make up about 15% of Turkey’s population according to a [recent research](https://data.tuik.gov.tr/Bulten/Index?p=Istatistiklerle-Genclik-2022-49670).
+
+-   The third one is that, interestingly enough, diabetes has seen a new high in 2022 and not 2019. There might be several reasons for that, and to make educated guesses we can put forward the lack of movement in our daily lives that got only worse after the Covid-19 pandemic. Or the fact that no one has time to consume ‘good’ food anymore. We don’t cook our own meals as often, instead opting for takeout after an exhausting shift that sucked the life out of us. Even if we do cook, we no longer can guarantee that our ingredients don’t contain a plethora of chemicals that we can’t even pronounce the names of.
+
 ### Distribution of Percentage by Gender for Each Disease {toc-text="Plot 3"}
 
 ```{r message=FALSE, warning=FALSE}
