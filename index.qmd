@@ -1,4 +1,6 @@
 ---
+styles:
+  styles.css
 sidebar: false
 ---
 

@@ -1,4 +1,6 @@
 ---
+styles:
+  styles.css
 format:
   html:
     toc: true
