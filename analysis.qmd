@@ -105,7 +105,8 @@ chart_12 <- plot_ly(data_1_longer,
                 colors = c("#49CE53", "#2B59C3","#FA7E61"),
                 type = "bar") %>%
   layout(title = list(text="Percentage by Disease with Year Connection", x = 0, y = 1),
-         xaxis = list(title = "Diseases"),
+         xaxis = list(title = "Diseases",
+                      tickangle = 45),
          yaxis = list(title = "Percentage"))
 
 chart_12
