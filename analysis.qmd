@@ -114,7 +114,7 @@ chart_12 <- plot_ly(data_1_longer,
 chart_12
 ```
 
-![](images/Ekran görüntüsü 2024-01-04 094715.png){fig-align="center" width="350"}
+![](Ekran görüntüsü 2024-01-04 094715.png){fig-align="center" width="350"}
 
 ::: {style="text-align: justify"}
 This graph tells us a few key things:
