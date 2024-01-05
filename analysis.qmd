@@ -88,8 +88,9 @@ plot <- plot_ly(summary_data,
 plot
 ```
 
-> One look at this plot and we can tell that women are more commonly reported to have health problems than men. Two categories are exceptions: Myocardial infarction, also known as a *heart attack*, and stroke.
-
+::: {style="text-align: justify"}
+One look at this plot and we can tell that women are more commonly reported to have health problems than men. Two categories are exceptions: Myocardial infarction, also known as a *heart attack*, and stroke.
+:::
 ### Percentage by Disease with Year Connection {toc-text="Plot 2"}
 
 ```{r}
@@ -111,15 +112,15 @@ chart_12 <- plot_ly(data_1_longer,
 
 chart_12
 ```
-
-> This graph tells us a few key things:
+::: {style="text-align: justify"}
+This graph tells us a few key things:
 
 -   First is the fact that 2019 was apparently a terrible year.
 
 -   The second is that the most reported cases of health problems seem to be Low Back Disorders and Neck Problems- Which is not all that surprising when you consider the current state of world affairs, is it? People are working 9-5, hunched over desks and keyboards all day, and the situation is not very different for students, which make up about 15% of Turkey’s population according to a [recent research](https://data.tuik.gov.tr/Bulten/Index?p=Istatistiklerle-Genclik-2022-49670).
 
 -   The third one is that, interestingly enough, diabetes has seen a new high in 2022 and not 2019. There might be several reasons for that, and to make educated guesses we can put forward the lack of movement in our daily lives that got only worse after the Covid-19 pandemic. Or the fact that no one has time to consume ‘good’ food anymore. We don’t cook our own meals as often, instead opting for takeout after an exhausting shift that sucked the life out of us. Even if we do cook, we no longer can guarantee that our ingredients don’t contain a plethora of chemicals that we can’t even pronounce the names of.
-
+:::
 ### Distribution of Percentage by Gender for Each Disease {toc-text="Plot 3"}
 
 ```{r message=FALSE, warning=FALSE}
@@ -203,9 +204,9 @@ chart_22 <- ggplot(data_2_longer, aes(x = year, y = rate, color = gender)) +
 
 ggplotly(chart_22)
 ```
-
-> We can see that the most recent year has seen a dramatic increase in men who have never consumed alcohol, which is supported by a decrease in regular consumers and people who have consumed alcohol in the past but don't consume anymore. The decrease in the “doesn’t consume” category seems to be more steep- Can it be the decline in the purchasing power with most recent economic disasters? Or is it the simple fact that people are choosing healthier lifestyles?
-
+::: {style="text-align: justify"}
+We can see that the most recent year has seen a dramatic increase in men who have never consumed alcohol, which is supported by a decrease in regular consumers and people who have consumed alcohol in the past but don't consume anymore. The decrease in the “doesn’t consume” category seems to be more steep- Can it be the decline in the purchasing power with most recent economic disasters? Or is it the simple fact that people are choosing healthier lifestyles?
+:::
 ### Percentage of Consumers of Alcohol Use by Sex and Age Group {toc-text="Plot 3"}
 
 ```{r message=FALSE, warning=FALSE}
@@ -226,9 +227,9 @@ chart_23 <- ggplotly(ggplot(consumers_data, aes(x = year, y = age, fill = rate))
 
 chart_23
 ```
-
-> The age range for alcohol consumers seem to overlap for both men and women- We can see from this visual representation that both men and women around the ages 25-34 consume more alcohol than any other age range. Although for men, we can see the intensity of consumption seems to carry on over to the 35-44 age range as well.
-
+::: {style="text-align: justify"}
+The age range for alcohol consumers seem to overlap for both men and women- We can see from this visual representation that both men and women around the ages 25-34 consume more alcohol than any other age range. Although for men, we can see the intensity of consumption seems to carry on over to the 35-44 age range as well.
+:::
 ## Data Set 3 : Body Mass Index Distribution of Individuals by Sex, 2008-2022 {toc-text="Dataset 3"}
 
 ```{r message=FALSE, warning=FALSE}
@@ -248,9 +249,7 @@ data_3_long <- data_3 %>%
 years <- c(2008, 2010, 2012, 2014, 2016, 2019, 2022)
 ```
 
-### Percentage of Categories Over Years {toc-text="Plot 1"}
-
-```{r message=FALSE, warning=FALSE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 #| code-fold: true
 #| code-summary: "Show the code"
 
@@ -269,9 +268,7 @@ chart_31 <- plot_ly(data_3_long,
 chart_31
 ```
 
-> While the “normal weight” category dominates the others throughout the study period, the latter half of the graph shows the concerning approach of the pre-obese category, almost catching up in recent years. The lack of movement and healthy food intake that we talked about earlier are definitely big contributors. But let’s approach this one from a different perspective: The tabooing of fatness and eating disorders in our society. Beauty standards. Our inclination to not believe people even when they voice their struggles. One thing that’s very common in especially younger people is using food as a form of escapism. What we need is to restore our relationship with our food consumption, and to start treating our bodies with respect and love. Much of physical health is closely connected with that of the mind.
-
-### Trends Over Years {toc-text="Plot 2"}
+### Trends Over Years {toc-text="Plot 1"}
 
 ```{r message=FALSE, warning=FALSE}
 #| code-fold: true
@@ -304,9 +301,10 @@ chart_322 <- streamgraph(summarized_3_long,
 chart_322
 ```
 
-> Over the years, we have gotten unhealthier and unhealthier. The percentage of people who are a healthy weight are decreasing while people who are pre-obese or obese are on the rise.
-
-### Boxplot of Percentage by Category and Sex {toc-text="Plot 3"}
+::: {style="text-align: justify"}
+Over the years, we have gotten unhealthier and unhealthier. The percentage of people who are a healthy weight are decreasing while people who are pre-obese or obese are on the rise.
+:::
+### Boxplot of Percentage by Category and Sex {toc-text="Plot 2"}
 
 ```{r message=FALSE, warning=FALSE}
 #| code-fold: true
