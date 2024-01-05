@@ -324,3 +324,6 @@ chart_33 <- plot_ly(data_3_long,
                       zeroline = FALSE))
 chart_33
 ```
+::: {style="text-align: justify"}
+While the “normal weight” category dominates the others throughout the study period, the latter half of the graph shows the concerning approach of the pre-obese category, almost catching up in recent years. The lack of movement and healthy food intake that we talked about earlier are definitely big contributors. But let’s approach this one from a different perspective: The tabooing of fatness and eating disorders in our society. Beauty standards. Our inclination to not believe people even when they voice their struggles. One thing that’s very common in especially younger people is using food as a form of escapism. What we need is to restore our relationship with our food consumption, and to start treating our bodies with respect and love. Much of physical health is closely connected with that of the mind.
+:::
